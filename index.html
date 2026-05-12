@@ -17,11 +17,11 @@
   <main>
     <header class="header">
       <div class="brand"><span class="dot"></span>GDT Daily</div>
-      <div class="counter"><b>01</b> / 38</div>
+      <div class="counter"><b>02</b> / 38</div>
     </header>
 
     <p class="lede">
-      One ASME Y14.5 lesson, every morning. <b>1</b> of 38 published — each lesson is one diagram plus a few sentences on what it controls, how to read it, and the mistake people make first time through.
+      One ASME Y14.5 lesson, every morning. <b>2</b> of 38 published — each lesson is one diagram plus a few sentences on what it controls, how to read it, and the mistake people make first time through.
     </p>
 
     <div class="stream">
@@ -144,6 +144,127 @@
 
         <nav class="lesson-nav" aria-label="lesson navigation">
           <span class="nav-prev empty"></span>
+          <a class="nav-next" href="#lesson-02"><span class="label"><span class="kicker">Next · Lesson 02</span><span class="t">Two languages on one drawing</span></span><span class="arrow">→</span></a>
+        </nav>
+      </article>
+
+      <article class="lesson" id="lesson-02">
+        <div class="meta">
+          <span class="num">Lesson 02</span>
+          <span class="sep">·</span>
+          <span class="section">§01 · Why GD&amp;T exists</span>
+          <span class="status">Published · 2026-05-12</span>
+        </div>
+
+        <h2 class="title">Two languages on one drawing</h2>
+
+        <div class="diagram" role="img" aria-label="Diagram for lesson 02: Two languages on one drawing">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 02 — Two languages on one drawing</title>
+  <desc>A single hole is called out with both a plus/minus size tolerance and a GD&amp;T position feature control frame, showing that size and location are separate concerns on the same part.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-axis        { stroke: #7a7567; stroke-width: 0.7; stroke-dasharray: 4 4; }
+    .svg-part        { fill: none; stroke: #ecd8b1; stroke-width: 1.4; }
+    .svg-hole        { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1.4; }
+    .svg-nominal     { fill: #ecd8b1; }
+    .svg-leader      { stroke: #b9b29d; stroke-width: 0.8; fill: none; marker-end: url(#arr); }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-callout     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-callout-red { fill: rgba(239, 106, 74, 0.22); stroke: #ef6a4a; stroke-width: 1; }
+    .svg-callout-blue{ fill: rgba(127, 182, 232, 0.20); stroke: #7fb6e8; stroke-width: 1; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 12px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-accent-red  { fill: #ef6a4a; font-weight: 700; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b9b29d"/>
+    </marker>
+  </defs>
+
+  <text class="svg-panel-title" x="36" y="36">TWO LANGUAGES ON ONE DRAWING</text>
+  <text class="svg-dim" x="36" y="58">one hole gets a size requirement and a location requirement — side by side, not mixed together</text>
+
+  <line class="svg-divider" x1="360" y1="78" x2="360" y2="300"/>
+
+  <g transform="translate(250,92)">
+    <rect class="svg-part" x="0" y="0" width="220" height="150" rx="3"/>
+    <line class="svg-axis" x1="110" y1="18" x2="110" y2="132"/>
+    <line class="svg-axis" x1="36" y1="75" x2="184" y2="75"/>
+    <circle class="svg-hole" cx="110" cy="75" r="34"/>
+    <circle class="svg-part" cx="110" cy="75" r="41" opacity="0.28"/>
+    <circle class="svg-nominal" cx="110" cy="75" r="2.5"/>
+    <text class="svg-label" x="73" y="143">SAME FEATURE</text>
+  </g>
+
+  <g transform="translate(34,108)">
+    <rect class="svg-callout-red" x="0" y="0" width="172" height="66" rx="2"/>
+    <text class="svg-label svg-accent-red" x="14" y="22">SIZE LANGUAGE</text>
+    <text class="svg-panel-title" x="14" y="48">⌀25.00 ±0.10</text>
+    <text class="svg-note" x="14" y="88">controls how big the hole is</text>
+  </g>
+  <path class="svg-leader" d="M207,141 C246,128 282,136 333,163"/>
+
+  <g transform="translate(500,104)">
+    <rect class="svg-callout-blue" x="0" y="0" width="186" height="96" rx="2"/>
+    <text class="svg-label svg-accent-blue" x="14" y="22">GD&amp;T LANGUAGE</text>
+
+    <g transform="translate(14,38)">
+      <rect class="svg-fcf-box" x="0" y="0" width="32" height="26"/>
+      <rect class="svg-fcf-box" x="32" y="0" width="58" height="26"/>
+      <rect class="svg-fcf-box" x="90" y="0" width="24" height="26"/>
+      <rect class="svg-fcf-box" x="114" y="0" width="24" height="26"/>
+      <rect class="svg-fcf-box" x="138" y="0" width="24" height="26"/>
+      <circle cx="16" cy="13" r="8" fill="none" stroke="#ecd8b1" stroke-width="1.3"/>
+      <line x1="16" y1="3" x2="16" y2="23" stroke="#ecd8b1" stroke-width="1.3"/>
+      <line x1="6" y1="13" x2="26" y2="13" stroke="#ecd8b1" stroke-width="1.3"/>
+      <text class="svg-fcf-text" x="40" y="18">⌀0.25</text>
+      <text class="svg-fcf-text" x="99" y="18">A</text>
+      <text class="svg-fcf-text" x="123" y="18">B</text>
+      <text class="svg-fcf-text" x="147" y="18">C</text>
+    </g>
+
+    <text class="svg-note" x="14" y="82">controls where the hole axis may be</text>
+  </g>
+  <path class="svg-leader" d="M499,165 C464,154 427,153 389,163"/>
+
+  <g transform="translate(292,268)">
+    <line class="svg-axis" x1="68" y1="-36" x2="68" y2="24"/>
+    <text class="svg-label" x="0" y="0">LOCATION IS THE CENTER AXIS</text>
+    <text class="svg-label" x="4" y="18">SIZE IS THE DIAMETER</text>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  SIZE AND LOCATION ARE SEPARATE STORIES ON THE SAME PART.</text>
+</svg>
+
+        </div>
+
+        <div class="notes">
+          <div class="note">
+            <div class="note-label">What it controls</div>
+            
+            <p>GD&T does <strong>not</strong> replace +/-. Every drawing has both: size tolerances (how big) and geometric tolerances (form, orientation, location). They work together.</p>
+          </div>
+          <div class="note">
+            <div class="note-label">Look at the diagram</div>
+            
+            <p>The diameter of the hole still uses ±. The <em>position</em> of the hole uses GD&T. Size and location are separate concerns; the drawing says both at once.</p>
+          </div>
+          <div class="note mistake">
+            <div class="note-label">Common mistake</div>
+            
+            <p>Reading the FCF and ignoring the size tolerance — or reading the size tolerance and ignoring the FCF. A part can be in-tolerance on size but out-of-tolerance on position, and vice versa.</p>
+          </div>
+        </div>
+
+        <nav class="lesson-nav" aria-label="lesson navigation">
+          <a class="nav-prev" href="#lesson-01"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 01</span><span class="t">The limit problem: why +/- isn't enough</span></span></a>
           <span class="nav-next empty"></span>
         </nav>
       </article>
