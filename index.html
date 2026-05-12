@@ -17,11 +17,11 @@
   <main>
     <header class="header">
       <div class="brand"><span class="dot"></span>GDT Daily</div>
-      <div class="counter"><b>03</b> / 38</div>
+      <div class="counter"><b>01</b> / 38</div>
     </header>
 
     <p class="lede">
-      One ASME Y14.5 lesson, every morning. <b>3</b> of 38 published — each lesson is one diagram plus a few sentences on what it controls, how to read it, and the mistake people make first time through.
+      One ASME Y14.5 lesson, every morning. <b>1</b> of 38 published — each lesson is one diagram plus a few sentences on what it controls, how to read it, and the mistake people make first time through.
     </p>
 
     <div class="stream">
@@ -30,7 +30,7 @@
           <span class="num">Lesson 01</span>
           <span class="sep">·</span>
           <span class="section">§01 · Why GD&amp;T exists</span>
-          <span class="status">Published</span>
+          <span class="status">Published · 2026-05-12</span>
         </div>
 
         <h2 class="title">The limit problem: why +/- isn't enough</h2>
@@ -40,22 +40,22 @@
   <title>Lesson 01 — The limit problem</title>
   <desc>Plus/minus tolerancing produces a square zone; GD&amp;T position produces a round zone with 57% more area for the same functional intent.</desc>
   <style>
-    .panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; }
-    .label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.08em; }
-    .dim         { font-size: 11px;   fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.04em; }
-    .note        { font-size: 10px;   fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.04em; }
-    .takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
-    .axis        { stroke: #7a7567; stroke-width: 0.7; stroke-dasharray: 4 4; }
-    .hole        { fill: none; stroke: #ecd8b1; stroke-width: 1.4; }
-    .nominal     { fill: #ecd8b1; }
-    .zone-square { fill: rgba(239, 106, 74, 0.22); stroke: #ef6a4a; stroke-width: 1; }
-    .zone-round  { fill: rgba(127, 182, 232, 0.20); stroke: #7fb6e8; stroke-width: 1; }
-    .fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
-    .fcf-text    { font-size: 12px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; }
-    .arrow       { stroke: #b9b29d; stroke-width: 0.8; fill: none; marker-end: url(#a); }
-    .accent-red  { fill: #ef6a4a; font-weight: 700; }
-    .accent-blue { fill: #7fb6e8; font-weight: 700; }
-    .divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px;   fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px;   fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-axis        { stroke: #7a7567; stroke-width: 0.7; stroke-dasharray: 4 4; }
+    .svg-hole        { fill: none; stroke: #ecd8b1; stroke-width: 1.4; }
+    .svg-nominal     { fill: #ecd8b1; }
+    .svg-zone-square { fill: rgba(239, 106, 74, 0.22); stroke: #ef6a4a; stroke-width: 1; }
+    .svg-zone-round  { fill: rgba(127, 182, 232, 0.20); stroke: #7fb6e8; stroke-width: 1; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 12px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; }
+    .svg-arrow       { stroke: #b9b29d; stroke-width: 0.8; fill: none; marker-end: url(#a); }
+    .svg-accent-red  { fill: #ef6a4a; font-weight: 700; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
   </style>
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
@@ -65,61 +65,61 @@
 
   <!-- LEFT PANEL: +/- tolerancing -->
   <g transform="translate(20,24)">
-    <text class="panel-title" x="0" y="0">+ / −  TOLERANCING</text>
-    <text class="dim" x="0" y="22">X = 25.00 ± 0.10    Y = 15.00 ± 0.10</text>
+    <text class="svg-panel-title" x="0" y="0">+ / −  TOLERANCING</text>
+    <text class="svg-dim" x="0" y="22">X = 25.00 ± 0.10    Y = 15.00 ± 0.10</text>
 
-    <line class="axis" x1="170" y1="60"  x2="170" y2="270"/>
-    <line class="axis" x1="60"  y1="165" x2="280" y2="165"/>
+    <line class="svg-axis" x1="170" y1="60"  x2="170" y2="270"/>
+    <line class="svg-axis" x1="60"  y1="165" x2="280" y2="165"/>
 
-    <rect class="zone-square" x="130" y="125" width="80" height="80"/>
-    <circle class="hole" cx="170" cy="165" r="22"/>
-    <circle class="nominal" cx="170" cy="165" r="2.5"/>
+    <rect class="svg-zone-square" x="130" y="125" width="80" height="80"/>
+    <circle class="svg-hole" cx="170" cy="165" r="22"/>
+    <circle class="svg-nominal" cx="170" cy="165" r="2.5"/>
 
-    <text class="label" x="130" y="118">TOLERANCE ZONE</text>
-    <text class="label accent-red" x="130" y="225">0.20 × 0.20 sq  =  0.040 area</text>
+    <text class="svg-label" x="130" y="118">TOLERANCE ZONE</text>
+    <text class="svg-label svg-accent-red" x="130" y="225">0.20 × 0.20 sq  =  0.040 area</text>
 
-    <line class="arrow" x1="244" y1="105" x2="213" y2="128"/>
-    <text class="note" x="244" y="100">corner: 0.141 from nominal</text>
-    <line class="arrow" x1="244" y1="290" x2="213" y2="205"/>
-    <text class="note" x="244" y="305">accepted — worst case for fit</text>
+    <line class="svg-arrow" x1="244" y1="105" x2="213" y2="128"/>
+    <text class="svg-note" x="244" y="100">corner: 0.141 from nominal</text>
+    <line class="svg-arrow" x1="244" y1="290" x2="213" y2="205"/>
+    <text class="svg-note" x="244" y="305">accepted — worst case for fit</text>
   </g>
 
-  <line class="divider" x1="360" y1="20" x2="360" y2="328"/>
+  <line class="svg-divider" x1="360" y1="20" x2="360" y2="328"/>
 
   <!-- RIGHT PANEL: GD&T position -->
   <g transform="translate(380,24)">
-    <text class="panel-title" x="0" y="0">GD&amp;T  POSITION</text>
-    <text class="dim" x="0" y="22">basic: 25.00, 15.00    position: ⌀0.283</text>
+    <text class="svg-panel-title" x="0" y="0">GD&amp;T  POSITION</text>
+    <text class="svg-dim" x="0" y="22">basic: 25.00, 15.00    position: ⌀0.283</text>
 
-    <line class="axis" x1="170" y1="60"  x2="170" y2="270"/>
-    <line class="axis" x1="60"  y1="165" x2="280" y2="165"/>
+    <line class="svg-axis" x1="170" y1="60"  x2="170" y2="270"/>
+    <line class="svg-axis" x1="60"  y1="165" x2="280" y2="165"/>
 
-    <circle class="zone-round" cx="170" cy="165" r="56.5"/>
-    <circle class="hole" cx="170" cy="165" r="22"/>
-    <circle class="nominal" cx="170" cy="165" r="2.5"/>
+    <circle class="svg-zone-round" cx="170" cy="165" r="56.5"/>
+    <circle class="svg-hole" cx="170" cy="165" r="22"/>
+    <circle class="svg-nominal" cx="170" cy="165" r="2.5"/>
 
     <!-- FCF -->
     <g transform="translate(80,238)">
-      <rect class="fcf-box" x="0"   y="0" width="32" height="26"/>
-      <rect class="fcf-box" x="32"  y="0" width="62" height="26"/>
-      <rect class="fcf-box" x="94"  y="0" width="22" height="26"/>
-      <rect class="fcf-box" x="116" y="0" width="22" height="26"/>
-      <rect class="fcf-box" x="138" y="0" width="22" height="26"/>
+      <rect class="svg-fcf-box" x="0"   y="0" width="32" height="26"/>
+      <rect class="svg-fcf-box" x="32"  y="0" width="62" height="26"/>
+      <rect class="svg-fcf-box" x="94"  y="0" width="22" height="26"/>
+      <rect class="svg-fcf-box" x="116" y="0" width="22" height="26"/>
+      <rect class="svg-fcf-box" x="138" y="0" width="22" height="26"/>
       <circle cx="16" cy="13" r="8" fill="none" stroke="#ecd8b1" stroke-width="1.3"/>
       <line x1="16" y1="3" x2="16" y2="23" stroke="#ecd8b1" stroke-width="1.3"/>
       <line x1="6"  y1="13" x2="26" y2="13" stroke="#ecd8b1" stroke-width="1.3"/>
-      <text class="fcf-text" x="40"  y="18">⌀0.283</text>
-      <text class="fcf-text" x="103" y="18">A</text>
-      <text class="fcf-text" x="125" y="18">B</text>
-      <text class="fcf-text" x="147" y="18">C</text>
+      <text class="svg-fcf-text" x="40"  y="18">⌀0.283</text>
+      <text class="svg-fcf-text" x="103" y="18">A</text>
+      <text class="svg-fcf-text" x="125" y="18">B</text>
+      <text class="svg-fcf-text" x="147" y="18">C</text>
     </g>
 
-    <text class="label" x="130" y="118">TOLERANCE ZONE</text>
-    <text class="label accent-blue" x="130" y="225">⌀0.283 round  =  0.063 area   (+57%)</text>
+    <text class="svg-label" x="130" y="118">TOLERANCE ZONE</text>
+    <text class="svg-label svg-accent-blue" x="130" y="225">⌀0.283 round  =  0.063 area   (+57%)</text>
   </g>
 
   <!-- Footer takeaway -->
-  <text class="takeaway" x="20" y="352">TAKEAWAY  ·  same nominal, same intent — round zone matches function and gives 57% more usable area.</text>
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  same nominal, same intent — round zone matches function and gives 57% more usable area.</text>
 </svg>
 
         </div>
@@ -144,74 +144,6 @@
 
         <nav class="lesson-nav" aria-label="lesson navigation">
           <span class="nav-prev empty"></span>
-          <a class="nav-next" href="#lesson-02"><span class="label"><span class="kicker">Next · Lesson 02</span><span class="t">Two languages on one drawing</span></span><span class="arrow">→</span></a>
-        </nav>
-      </article>
-
-      <article class="lesson" id="lesson-02">
-        <div class="meta">
-          <span class="num">Lesson 02</span>
-          <span class="sep">·</span>
-          <span class="section">§01 · Why GD&amp;T exists</span>
-          <span class="status">Published</span>
-        </div>
-
-        <h2 class="title">Two languages on one drawing</h2>
-
-        <div class="notes">
-          <div class="note">
-            <div class="note-label">What it controls</div>
-            
-            <p>GD&T does <strong>not</strong> replace +/-. Every drawing has both: size tolerances (how big) and geometric tolerances (form, orientation, location). They work together.</p>
-          </div>
-          <div class="note">
-            <div class="note-label">Look at the diagram</div>
-            
-            <p>The diameter of the hole still uses ±. The <em>position</em> of the hole uses GD&T. Size and location are separate concerns; the drawing says both at once.</p>
-          </div>
-          <div class="note mistake">
-            <div class="note-label">Common mistake</div>
-            
-            <p>Reading the FCF and ignoring the size tolerance — or reading the size tolerance and ignoring the FCF. A part can be in-tolerance on size but out-of-tolerance on position, and vice versa.</p>
-          </div>
-        </div>
-
-        <nav class="lesson-nav" aria-label="lesson navigation">
-          <a class="nav-prev" href="#lesson-01"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 01</span><span class="t">The limit problem: why +/- isn't enough</span></span></a>
-          <a class="nav-next" href="#lesson-03"><span class="label"><span class="kicker">Next · Lesson 03</span><span class="t">Anatomy of the Feature Control Frame</span></span><span class="arrow">→</span></a>
-        </nav>
-      </article>
-
-      <article class="lesson" id="lesson-03">
-        <div class="meta">
-          <span class="num">Lesson 03</span>
-          <span class="sep">·</span>
-          <span class="section">§02 · The Feature Control Frame</span>
-          <span class="status">Published</span>
-        </div>
-
-        <h2 class="title">Anatomy of the Feature Control Frame</h2>
-
-        <div class="notes">
-          <div class="note">
-            <div class="note-label">What it controls</div>
-            
-            <p>Every geometric tolerance lives in a Feature Control Frame (FCF) — a row of boxes that reads like a sentence: <strong>"This [symbol] of this feature, by this amount [modifier], relative to these datums."</strong></p>
-          </div>
-          <div class="note">
-            <div class="note-label">Look at the diagram</div>
-            
-            <p>Five blocks, left to right: <strong>symbol → tolerance → modifier (optional) → primary datum → secondary datum → tertiary datum.</strong></p>
-          </div>
-          <div class="note mistake">
-            <div class="note-label">Common mistake</div>
-            
-            <p>Reading datums in alphabetical order instead of FCF order. The leftmost datum is the <strong>primary</strong> regardless of the letter — <code>|A|B|C|</code> and <code>|C|B|A|</code> mean different things on the same part.</p>
-          </div>
-        </div>
-
-        <nav class="lesson-nav" aria-label="lesson navigation">
-          <a class="nav-prev" href="#lesson-02"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 02</span><span class="t">Two languages on one drawing</span></span></a>
           <span class="nav-next empty"></span>
         </nav>
       </article>
