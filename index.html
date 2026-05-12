@@ -25,72 +25,6 @@
     </p>
 
     <div class="stream">
-      <article class="lesson" id="lesson-03">
-        <div class="meta">
-          <span class="num">Lesson 03</span>
-          <span class="sep">·</span>
-          <span class="section">§02 · The Feature Control Frame</span>
-          <span class="status">Published</span>
-        </div>
-
-        <h2 class="title">Anatomy of the Feature Control Frame</h2>
-
-        <div class="diagram" role="img" aria-label="Diagram for lesson 03: Anatomy of the Feature Control Frame">
-          <div class="diagram-placeholder"><b>Diagram</b>pending</div>
-        </div>
-
-        <div class="notes">
-          <div class="note">
-            <div class="note-label">What it controls</div>
-            
-            <p>Every geometric tolerance lives in a Feature Control Frame (FCF) — a row of boxes that reads like a sentence: <strong>"This [symbol] of this feature, by this amount [modifier], relative to these datums."</strong></p>
-          </div>
-          <div class="note">
-            <div class="note-label">Look at the diagram</div>
-            
-            <p>Five blocks, left to right: <strong>symbol → tolerance → modifier (optional) → primary datum → secondary datum → tertiary datum.</strong></p>
-          </div>
-          <div class="note mistake">
-            <div class="note-label">Common mistake</div>
-            
-            <p>Reading datums in alphabetical order instead of FCF order. The leftmost datum is the <strong>primary</strong> regardless of the letter — <code>|A|B|C|</code> and <code>|C|B|A|</code> mean different things on the same part.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="lesson" id="lesson-02">
-        <div class="meta">
-          <span class="num">Lesson 02</span>
-          <span class="sep">·</span>
-          <span class="section">§01 · Why GD&amp;T exists</span>
-          <span class="status">Published</span>
-        </div>
-
-        <h2 class="title">Two languages on one drawing</h2>
-
-        <div class="diagram" role="img" aria-label="Diagram for lesson 02: Two languages on one drawing">
-          <div class="diagram-placeholder"><b>Diagram</b>pending</div>
-        </div>
-
-        <div class="notes">
-          <div class="note">
-            <div class="note-label">What it controls</div>
-            
-            <p>GD&T does <strong>not</strong> replace +/-. Every drawing has both: size tolerances (how big) and geometric tolerances (form, orientation, location). They work together.</p>
-          </div>
-          <div class="note">
-            <div class="note-label">Look at the diagram</div>
-            
-            <p>The diameter of the hole still uses ±. The <em>position</em> of the hole uses GD&T. Size and location are separate concerns; the drawing says both at once.</p>
-          </div>
-          <div class="note mistake">
-            <div class="note-label">Common mistake</div>
-            
-            <p>Reading the FCF and ignoring the size tolerance — or reading the size tolerance and ignoring the FCF. A part can be in-tolerance on size but out-of-tolerance on position, and vice versa.</p>
-          </div>
-        </div>
-      </article>
-
       <article class="lesson" id="lesson-01">
         <div class="meta">
           <span class="num">Lesson 01</span>
@@ -207,6 +141,79 @@
             <p>"Plus/minus is tighter, so it must be better." Wrong. ±0.10 / ±0.10 is <strong>looser at the corners</strong> (diagonal = 0.141) than along the axes (0.10), and the corner moves are exactly the ones that hurt functional fit. GD&T position fixes both ends: stricter where it matters, looser where it doesn't.</p>
           </div>
         </div>
+
+        <nav class="lesson-nav" aria-label="lesson navigation">
+          <span class="nav-prev empty"></span>
+          <a class="nav-next" href="#lesson-02"><span class="label"><span class="kicker">Next · Lesson 02</span><span class="t">Two languages on one drawing</span></span><span class="arrow">→</span></a>
+        </nav>
+      </article>
+
+      <article class="lesson" id="lesson-02">
+        <div class="meta">
+          <span class="num">Lesson 02</span>
+          <span class="sep">·</span>
+          <span class="section">§01 · Why GD&amp;T exists</span>
+          <span class="status">Published</span>
+        </div>
+
+        <h2 class="title">Two languages on one drawing</h2>
+
+        <div class="notes">
+          <div class="note">
+            <div class="note-label">What it controls</div>
+            
+            <p>GD&T does <strong>not</strong> replace +/-. Every drawing has both: size tolerances (how big) and geometric tolerances (form, orientation, location). They work together.</p>
+          </div>
+          <div class="note">
+            <div class="note-label">Look at the diagram</div>
+            
+            <p>The diameter of the hole still uses ±. The <em>position</em> of the hole uses GD&T. Size and location are separate concerns; the drawing says both at once.</p>
+          </div>
+          <div class="note mistake">
+            <div class="note-label">Common mistake</div>
+            
+            <p>Reading the FCF and ignoring the size tolerance — or reading the size tolerance and ignoring the FCF. A part can be in-tolerance on size but out-of-tolerance on position, and vice versa.</p>
+          </div>
+        </div>
+
+        <nav class="lesson-nav" aria-label="lesson navigation">
+          <a class="nav-prev" href="#lesson-01"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 01</span><span class="t">The limit problem: why +/- isn't enough</span></span></a>
+          <a class="nav-next" href="#lesson-03"><span class="label"><span class="kicker">Next · Lesson 03</span><span class="t">Anatomy of the Feature Control Frame</span></span><span class="arrow">→</span></a>
+        </nav>
+      </article>
+
+      <article class="lesson" id="lesson-03">
+        <div class="meta">
+          <span class="num">Lesson 03</span>
+          <span class="sep">·</span>
+          <span class="section">§02 · The Feature Control Frame</span>
+          <span class="status">Published</span>
+        </div>
+
+        <h2 class="title">Anatomy of the Feature Control Frame</h2>
+
+        <div class="notes">
+          <div class="note">
+            <div class="note-label">What it controls</div>
+            
+            <p>Every geometric tolerance lives in a Feature Control Frame (FCF) — a row of boxes that reads like a sentence: <strong>"This [symbol] of this feature, by this amount [modifier], relative to these datums."</strong></p>
+          </div>
+          <div class="note">
+            <div class="note-label">Look at the diagram</div>
+            
+            <p>Five blocks, left to right: <strong>symbol → tolerance → modifier (optional) → primary datum → secondary datum → tertiary datum.</strong></p>
+          </div>
+          <div class="note mistake">
+            <div class="note-label">Common mistake</div>
+            
+            <p>Reading datums in alphabetical order instead of FCF order. The leftmost datum is the <strong>primary</strong> regardless of the letter — <code>|A|B|C|</code> and <code>|C|B|A|</code> mean different things on the same part.</p>
+          </div>
+        </div>
+
+        <nav class="lesson-nav" aria-label="lesson navigation">
+          <a class="nav-prev" href="#lesson-02"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 02</span><span class="t">Two languages on one drawing</span></span></a>
+          <span class="nav-next empty"></span>
+        </nav>
       </article>
 
     </div>
