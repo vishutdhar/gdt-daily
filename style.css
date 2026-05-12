@@ -1,0 +1,291 @@
+/* ============================================================
+   GDT Daily — simple, dark, mobile-first
+   ============================================================ */
+
+:root {
+  --bg:        #000000;
+  --surface:   #0c0c10;
+  --surface-2: #14141a;
+  --line:      rgba(255, 255, 255, 0.06);
+  --line-2:    rgba(255, 255, 255, 0.10);
+
+  --text:      #f0f0f4;
+  --text-dim:  #b8b8c0;
+  --text-mute: #70707a;
+  --text-faint:#4a4a52;
+
+  --accent:    #7fb6e8;   /* GD&T / right side */
+  --warn:      #ef6a4a;   /* +/- / wrong side  */
+  --ok:        #00d4a3;
+
+  --display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 20px 96px;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.brand .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 8px;
+  vertical-align: 1.5px;
+}
+
+.counter {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--text-mute);
+}
+.counter b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Intro lede */
+.lede {
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 32px;
+  max-width: 60ch;
+}
+.lede b { color: var(--text); font-weight: 600; }
+
+/* ============================================================
+   Lesson card
+   ============================================================ */
+
+.stream {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.lesson {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-mute);
+  margin-bottom: 12px;
+}
+.meta .num {
+  color: var(--text);
+  font-weight: 600;
+}
+.meta .sep {
+  color: var(--text-faint);
+}
+.meta .section {
+  color: var(--text-dim);
+}
+.meta .status {
+  margin-left: auto;
+  color: var(--ok);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.meta .status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ok);
+}
+.meta .status.queued {
+  color: var(--text-mute);
+}
+.meta .status.queued::before {
+  background: var(--text-mute);
+}
+
+.title {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  margin: 0 0 18px;
+}
+
+/* Hero diagram */
+.diagram {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0 0 20px;
+}
+.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.diagram-placeholder {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  text-align: center;
+  padding: 56px 16px;
+}
+.diagram-placeholder b {
+  display: block;
+  color: var(--text-dim);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Notes */
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.note {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  font-family: var(--display);
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.note-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 8px;
+}
+
+.note h3 {
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+
+.note p {
+  margin: 0 0 8px;
+  font-family: var(--display);
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--text-dim);
+}
+.note p:last-child { margin-bottom: 0; }
+.note p strong { color: var(--text); font-weight: 600; }
+.note p em { color: var(--text); font-style: italic; }
+.note p code {
+  font-family: var(--mono);
+  font-size: 13.5px;
+  background: rgba(127, 182, 232, 0.10);
+  color: var(--accent);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.note.mistake .note-label { color: var(--warn); }
+.note .pending { color: var(--text-faint); font-style: italic; }
+
+/* Queued lesson */
+.lesson.queued {
+  opacity: 0.6;
+}
+.lesson.queued .title {
+  color: var(--text-dim);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.colophon {
+  margin-top: 56px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-mute);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  justify-content: space-between;
+}
+.colophon b { color: var(--text-dim); font-weight: 600; }
+
+/* ============================================================
+   Wider screens — slightly more breathing room
+   ============================================================ */
+@media (min-width: 720px) {
+  main { padding: 32px 24px 96px; }
+  .lesson { padding: 28px; }
+  .title { font-size: 26px; }
+  .diagram { padding: 16px; }
+}
