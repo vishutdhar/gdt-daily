@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 07 · Datum simulators: how datums get real — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 07: Datum simulators: how datums get real. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>07</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§03 · Datums</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-07">
+      <div class="meta">
+        <span class="num">Lesson 07</span>
+        <span class="sep">·</span>
+        <span class="section">§03 · Datums</span>
+        <span class="status">Published · 2026-05-20</span>
+        <a class="permalink" href="../l/07.html" aria-label="permalink to lesson 07">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Datum simulators: how datums get real</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 07: Datum simulators: how datums get real">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 07 — Datum simulators</title>
+  <desc>Three rows show how datums are physically simulated during inspection: a planar surface on a surface plate, a cylindrical shaft in a three-jaw chuck, and a hole on a gage pin.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 9.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-part        { fill: rgba(236, 216, 177, 0.08); stroke: #ecd8b1; stroke-width: 1.2; }
+    .svg-sim         { fill: rgba(127, 182, 232, 0.20); stroke: #7fb6e8; stroke-width: 1.2; }
+    .svg-axis        { stroke: #7a7567; stroke-width: 0.7; stroke-dasharray: 4 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">DATUM SIMULATORS</text>
+  <text class="svg-dim" x="36" y="58">the simulator IS the datum during inspection</text>
+
+  <!-- Column headers -->
+  <text class="svg-label svg-accent-blue" x="86" y="92">FEATURE</text>
+  <text class="svg-label svg-accent-blue" x="306" y="92">SIMULATOR</text>
+  <text class="svg-label svg-accent-blue" x="526" y="92">DATUM ESTABLISHED</text>
+
+  <line class="svg-divider" x1="36" y1="102" x2="684" y2="102"/>
+  <line class="svg-divider" x1="36" y1="184" x2="684" y2="184"/>
+  <line class="svg-divider" x1="36" y1="266" x2="684" y2="266"/>
+
+  <!-- ROW 1: planar -->
+  <g transform="translate(36,112)">
+    <text class="svg-label" x="0" y="14">PLANAR</text>
+    <path class="svg-part" d="M80,30 L180,30 L180,52 Q170,56 158,53 Q145,50 132,55 Q118,60 105,52 Q92,44 80,52 Z"/>
+    <text class="svg-note" x="84" y="68">flat-bottomed part</text>
+
+    <!-- Simulator: surface plate -->
+    <g transform="translate(240,0)">
+      <path class="svg-part" d="M40,12 L140,12 L140,34 Q130,38 118,35 Q105,32 92,37 Q78,42 65,34 Q52,26 40,34 Z"/>
+      <rect class="svg-sim" x="20" y="50" width="140" height="12"/>
+      <text class="svg-note" x="44" y="76">precision surface plate</text>
+    </g>
+
+    <!-- Datum -->
+    <g transform="translate(480,0)">
+      <line x1="20" y1="50" x2="180" y2="50" stroke="#7fb6e8" stroke-width="1.4"/>
+      <text class="svg-label svg-accent-blue" x="44" y="40">datum A (plane)</text>
+      <text class="svg-note" x="20" y="68">three highest contacts → plane</text>
+    </g>
+  </g>
+
+  <!-- ROW 2: cylindrical -->
+  <g transform="translate(36,194)">
+    <text class="svg-label" x="0" y="14">CYLINDRICAL</text>
+
+    <!-- Feature -->
+    <g transform="translate(80,0)">
+      <rect class="svg-part" x="0" y="22" width="120" height="22" rx="11"/>
+      <line class="svg-axis" x1="-6" y1="33" x2="126" y2="33"/>
+      <text class="svg-note" x="14" y="58">shaft (datum feature)</text>
+    </g>
+
+    <!-- Simulator: 3-jaw chuck (end view) -->
+    <g transform="translate(290,0)">
+      <circle cx="50" cy="34" r="22" fill="none" stroke="#ecd8b1" stroke-width="1"/>
+      <circle cx="50" cy="34" r="10" class="svg-sim"/>
+      <!-- jaws -->
+      <path d="M50,10 L46,18 L54,18 Z" fill="#7fb6e8"/>
+      <path d="M73,46 L65,42 L65,50 Z" fill="#7fb6e8"/>
+      <path d="M27,46 L35,42 L35,50 Z" fill="#7fb6e8"/>
+      <text class="svg-note" x="14" y="74">three-jaw chuck (end view)</text>
+    </g>
+
+    <!-- Datum -->
+    <g transform="translate(480,0)">
+      <line class="svg-axis" x1="20" y1="34" x2="180" y2="34" style="stroke:#7fb6e8; stroke-dasharray:2 3"/>
+      <circle cx="100" cy="34" r="2" fill="#7fb6e8"/>
+      <text class="svg-label svg-accent-blue" x="44" y="20">datum B (axis)</text>
+      <text class="svg-note" x="20" y="62">chuck centerline → axis</text>
+    </g>
+  </g>
+
+  <!-- ROW 3: hole -->
+  <g transform="translate(36,276)">
+    <text class="svg-label" x="0" y="14">HOLE</text>
+
+    <!-- Feature -->
+    <g transform="translate(80,0)">
+      <rect class="svg-part" x="0" y="18" width="130" height="30"/>
+      <circle cx="65" cy="33" r="10" fill="#000" stroke="#ecd8b1" stroke-width="1"/>
+      <line class="svg-axis" x1="65" y1="14" x2="65" y2="52"/>
+      <text class="svg-note" x="6" y="62">plate with hole</text>
+    </g>
+
+    <!-- Simulator: gage pin -->
+    <g transform="translate(290,0)">
+      <rect class="svg-part" x="0" y="18" width="130" height="30"/>
+      <circle cx="65" cy="33" r="10" class="svg-sim"/>
+      <line class="svg-axis" x1="65" y1="14" x2="65" y2="52"/>
+      <text class="svg-note" x="14" y="62">gage pin (slip fit)</text>
+    </g>
+
+    <!-- Datum -->
+    <g transform="translate(480,0)">
+      <line class="svg-axis" x1="100" y1="14" x2="100" y2="62" style="stroke:#7fb6e8; stroke-dasharray:2 3"/>
+      <circle cx="100" cy="33" r="2" fill="#7fb6e8"/>
+      <text class="svg-label svg-accent-blue" x="44" y="20">datum C (axis)</text>
+      <text class="svg-note" x="20" y="76">pin centerline → axis</text>
+    </g>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  CALIBRATING THE SIMULATOR IS CALIBRATING THE DATUM.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>The bridge between the drawing and the inspection lab. A datum is theoretical — a perfect plane, a perfect axis, a perfect point. You cannot machine a perfect anything. So during inspection, the datum is <strong>simulated</strong> by a piece of high-precision hardware: a surface plate, a gage pin, a V-block, a chuck.</p>
+<p>During inspection, <strong>the simulator <em>is</em> the datum</strong>. The simulator's geometry — flat to a few millionths, round to a tenth — stands in for the theoretical reference, and the part's measurements are taken relative to the simulator.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>Three rows, one per datum type. Top: a <strong>planar datum feature</strong> sits on a <strong>surface plate</strong> — the plate's perfect top surface establishes datum A. Middle: a <strong>cylindrical datum feature</strong> (a shaft) is held in a <strong>three-jaw chuck</strong> that contracts symmetrically; the chuck's centerline establishes the datum axis. Bottom: a <strong>hole datum feature</strong> receives a <strong>gage pin</strong> with a slip-fit; the pin's axis establishes the datum axis.</p>
+<p>Different geometry, same idea: a precise simulator replaces a perfect abstraction.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Treating the surface plate or gage pin as just "a tool." It is the datum during that inspection. If your surface plate is worn or your gage pin is undersized, your datum is wrong — and every measurement traced to it inherits that error. Calibration of simulators is calibration of datums.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/06.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 06</span><span class="t">Picking datum features: function over convenience</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
