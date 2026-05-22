@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 08 · The 3-2-1 principle: how three datums lock a part in space — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 08: The 3-2-1 principle: how three datums lock a part in space. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>08</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§04 · Datum Reference Frame</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-08">
+      <div class="meta">
+        <span class="num">Lesson 08</span>
+        <span class="sep">·</span>
+        <span class="section">§04 · Datum Reference Frame</span>
+        <span class="status">Published · 2026-05-21</span>
+        <a class="permalink" href="../l/08.html" aria-label="permalink to lesson 08">↗ permalink</a>
+      </div>
+
+      <h3 class="title">The 3-2-1 principle: how three datums lock a part in space</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 08: The 3-2-1 principle: how three datums lock a part in space">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 08 — The 3-2-1 principle</title>
+  <desc>An isometric block seated in a datum reference frame: three contact points on the primary plane (bottom), two on the secondary (back), one on the tertiary (side). Six contacts remove six degrees of freedom.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-part        { fill: rgba(236, 216, 177, 0.10); stroke: #ecd8b1; stroke-width: 1.2; }
+    .svg-primary     { fill: rgba(127, 182, 232, 0.18); stroke: #7fb6e8; stroke-width: 1.2; }
+    .svg-secondary   { fill: rgba(127, 182, 232, 0.12); stroke: #7fb6e8; stroke-width: 1.2; }
+    .svg-tertiary    { fill: rgba(127, 182, 232, 0.08); stroke: #7fb6e8; stroke-width: 1.2; }
+    .svg-dot         { fill: #ef6a4a; stroke: #ecd8b1; stroke-width: 0.6; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-accent-red  { fill: #ef6a4a; font-weight: 700; }
+    .svg-axis        { stroke: #7a7567; stroke-width: 0.7; stroke-dasharray: 4 4; }
+    .svg-fcf-text    { font-size: 12px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">THE 3-2-1 PRINCIPLE</text>
+  <text class="svg-dim" x="36" y="58">six contact points remove six degrees of freedom</text>
+
+  <line class="svg-divider" x1="420" y1="78" x2="420" y2="298"/>
+
+  <!-- LEFT: isometric DRF + block -->
+  <g transform="translate(60,110)">
+    <!-- Primary plane (bottom) -->
+    <path class="svg-primary" d="M0,140 L220,140 L300,110 L80,110 Z"/>
+    <text class="svg-fcf-text" x="240" y="158" style="fill:#7fb6e8">A</text>
+    <text class="svg-note" x="0" y="172">primary · 3 contacts</text>
+
+    <!-- Secondary plane (back) -->
+    <path class="svg-secondary" d="M80,110 L300,110 L300,40 L80,40 Z"/>
+    <text class="svg-fcf-text" x="306" y="78" style="fill:#7fb6e8">B</text>
+    <text class="svg-note" x="306" y="92">secondary · 2</text>
+
+    <!-- Tertiary plane (side) -->
+    <path class="svg-tertiary" d="M0,140 L80,110 L80,40 L0,70 Z"/>
+    <text class="svg-fcf-text" x="-4" y="36" style="fill:#7fb6e8">C</text>
+    <text class="svg-note" x="-4" y="22">tertiary · 1</text>
+
+    <!-- The part (smaller block resting on A, against B, touching C) -->
+    <path class="svg-part" d="M30,116 L180,116 L222,98 L72,98 Z"/>
+    <path class="svg-part" d="M180,116 L222,98 L222,62 L180,80 Z"/>
+    <path class="svg-part" d="M30,116 L30,80 L72,62 L72,98 Z"/>
+    <path class="svg-part" d="M30,80 L72,62 L222,62 L180,80 Z"/>
+
+    <!-- Three contact dots on primary -->
+    <circle class="svg-dot" cx="58" cy="120" r="3.2"/>
+    <circle class="svg-dot" cx="160" cy="120" r="3.2"/>
+    <circle class="svg-dot" cx="110" cy="110" r="3.2"/>
+
+    <!-- Two contact dots on secondary -->
+    <circle class="svg-dot" cx="100" cy="76" r="3.2"/>
+    <circle class="svg-dot" cx="200" cy="76" r="3.2"/>
+
+    <!-- One contact dot on tertiary -->
+    <circle class="svg-dot" cx="50" cy="92" r="3.2"/>
+  </g>
+
+  <!-- RIGHT: ledger of constraints -->
+  <g transform="translate(450,108)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">DEGREES OF FREEDOM LEDGER</text>
+
+    <g transform="translate(0,22)">
+      <!-- Header -->
+      <text class="svg-label" x="0" y="0">DATUM</text>
+      <text class="svg-label" x="76" y="0">PTS</text>
+      <text class="svg-label" x="118" y="0">LOCKS</text>
+      <line class="svg-divider" x1="-4" y1="8" x2="240" y2="8"/>
+
+      <!-- Primary row -->
+      <text class="svg-dim svg-accent-blue" x="0" y="28">A · plane</text>
+      <text class="svg-dim svg-accent-red" x="80" y="28">3</text>
+      <text class="svg-dim" x="118" y="28">1 trans · 2 rot</text>
+
+      <!-- Secondary row -->
+      <text class="svg-dim svg-accent-blue" x="0" y="50">B · plane</text>
+      <text class="svg-dim svg-accent-red" x="80" y="50">2</text>
+      <text class="svg-dim" x="118" y="50">1 trans · 1 rot</text>
+
+      <!-- Tertiary row -->
+      <text class="svg-dim svg-accent-blue" x="0" y="72">C · plane</text>
+      <text class="svg-dim svg-accent-red" x="80" y="72">1</text>
+      <text class="svg-dim" x="118" y="72">1 trans</text>
+
+      <line class="svg-divider" x1="-4" y1="84" x2="240" y2="84"/>
+
+      <!-- Totals -->
+      <text class="svg-dim" x="0" y="104">TOTAL</text>
+      <text class="svg-dim svg-accent-red" x="80" y="104">6</text>
+      <text class="svg-dim svg-accent-blue" x="118" y="104">3 trans · 3 rot · all 6</text>
+
+      <!-- Mnemonic -->
+      <text class="svg-note" x="0" y="142">part is now fully constrained.</text>
+      <text class="svg-note" x="0" y="156">measurements are repeatable.</text>
+    </g>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  3 + 2 + 1 = 6.  ANY OTHER SUM EITHER ROCKS THE PART OR WASTES A REFERENCE.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>How a physical part — which floats freely in space with six degrees of freedom (three translations, three rotations) — gets fully constrained for inspection. The answer is <strong>3-2-1</strong>: the primary datum contacts at three points, the secondary at two, the tertiary at one. Six contacts total. Six degrees of freedom removed.</p>
+<p>A part that isn't fully constrained moves while you measure it. A datum reference frame that doesn't follow 3-2-1 either over-constrains (the part rocks between two equally valid positions) or under-constrains (a measurement depends on how the inspector happened to nudge it).</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>A rectangular block being seated against three orthogonal planes. The <strong>primary</strong> plane (datum A, bottom) takes <strong>three</strong> contact points — that's the minimum to define a plane, and it locks one translation (vertical) plus two rotations (pitch and roll). The <strong>secondary</strong> plane (datum B, back) takes <strong>two</strong> contacts along a line — one more translation gone, one more rotation gone. The <strong>tertiary</strong> plane (datum C, side) takes <strong>one</strong> contact at a point — the final translation locked. Total: 3 + 2 + 1 = 6 contacts, 6 degrees of freedom removed.</p>
+<p>Notice the order matters: the primary gets the most contact because it's most trusted to be flat and to represent function.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Treating all three datums as equivalent. They aren't — they're in <strong>priority order</strong>. The primary fully seats first; the secondary aligns against the primary; the tertiary just stops the slide. If you swap primary and tertiary, you get a different inspection result because the part now rocks on what should have been the stable reference.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/07.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 07</span><span class="t">Datum simulators: how datums get real</span></span></a>
+        <a class="nav-next" href="../l/09.html"><span class="label"><span class="kicker">Next · Lesson 09</span><span class="t">Primary, secondary, tertiary: order changes the answer</span></span><span class="arrow">→</span></a>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>

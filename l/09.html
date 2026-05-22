@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 09 · Primary, secondary, tertiary: order changes the answer — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 09: Primary, secondary, tertiary: order changes the answer. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>09</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§04 · Datum Reference Frame</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-09">
+      <div class="meta">
+        <span class="num">Lesson 09</span>
+        <span class="sep">·</span>
+        <span class="section">§04 · Datum Reference Frame</span>
+        <span class="status">Published · 2026-05-22</span>
+        <a class="permalink" href="../l/09.html" aria-label="permalink to lesson 09">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Primary, secondary, tertiary: order changes the answer</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 09: Primary, secondary, tertiary: order changes the answer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 09 — Datum order matters</title>
+  <desc>The same L-bracket measured two ways: A-primary B-secondary on the left, B-primary A-secondary on the right. Hole position relative to the datum reference frame differs.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-part        { fill: rgba(236, 216, 177, 0.10); stroke: #ecd8b1; stroke-width: 1.2; }
+    .svg-primary     { stroke: #7fb6e8; stroke-width: 2.2; fill: none; }
+    .svg-secondary   { stroke: #7fb6e8; stroke-width: 1.2; fill: none; stroke-dasharray: 5 3; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-accent-red  { fill: #ef6a4a; font-weight: 700; }
+    .svg-axis        { stroke: #7a7567; stroke-width: 0.7; stroke-dasharray: 4 4; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 11px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-hole        { fill: #08080b; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-meas        { stroke: #ef6a4a; stroke-width: 1; fill: none; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">DATUM ORDER MATTERS</text>
+  <text class="svg-dim" x="36" y="58">same part, same datums, different sequence → different answer</text>
+
+  <line class="svg-divider" x1="360" y1="78" x2="360" y2="298"/>
+
+  <!-- LEFT: A primary, B secondary -->
+  <g transform="translate(40,98)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">| ⌖ | Ø0.2 Ⓜ | A | B |</text>
+
+    <g transform="translate(40,30)">
+      <!-- Bracket (L-shape) -->
+      <path class="svg-part" d="M30,30 L150,30 L150,100 L260,100 L260,140 L30,140 Z"/>
+
+      <!-- Hole -->
+      <circle class="svg-hole" cx="200" cy="120" r="9"/>
+      <line class="svg-axis" x1="200" y1="105" x2="200" y2="135"/>
+      <line class="svg-axis" x1="185" y1="120" x2="215" y2="120"/>
+
+      <!-- Datum A = primary (bottom, solid blue thick) -->
+      <line class="svg-primary" x1="30" y1="140" x2="260" y2="140"/>
+      <g transform="translate(140,162)">
+        <rect class="svg-fcf-box" x="-11" y="-11" width="22" height="22" style="stroke:#7fb6e8"/>
+        <text class="svg-fcf-text" x="-5" y="4" style="fill:#7fb6e8">A</text>
+        <line x1="0" y1="-11" x2="0" y2="-22" stroke="#7fb6e8" stroke-width="0.9"/>
+      </g>
+
+      <!-- Datum B = secondary (back, dashed thinner blue) -->
+      <line class="svg-secondary" x1="30" y1="30" x2="30" y2="140"/>
+      <g transform="translate(-2,90)">
+        <rect class="svg-fcf-box" x="-22" y="-11" width="22" height="22" style="stroke:#7fb6e8"/>
+        <text class="svg-fcf-text" x="-16" y="4" style="fill:#7fb6e8">B</text>
+        <line x1="-22" y1="0" x2="-2" y2="0" stroke="#7fb6e8" stroke-width="0.9" style="stroke-dasharray: 5 3"/>
+      </g>
+
+      <!-- Measurement: hole position from B (X) and A (Y) -->
+      <line class="svg-meas" x1="30" y1="120" x2="200" y2="120"/>
+      <text class="svg-dim svg-accent-red" x="92" y="116">X = 170</text>
+      <line class="svg-meas" x1="200" y1="140" x2="200" y2="120"/>
+      <text class="svg-dim svg-accent-red" x="208" y="134">Y = 20</text>
+    </g>
+
+    <text class="svg-note" x="6" y="220">A seats first (bottom flat)</text>
+    <text class="svg-note" x="6" y="234">B aligns the slide</text>
+  </g>
+
+  <!-- RIGHT: B primary, A secondary -->
+  <g transform="translate(388,98)">
+    <text class="svg-label svg-accent-red" x="0" y="0">| ⌖ | Ø0.2 Ⓜ | B | A |</text>
+
+    <g transform="translate(40,30)">
+      <!-- Bracket (L-shape) - rotated 90° conceptually: B is now the seating face -->
+      <path class="svg-part" d="M30,30 L150,30 L150,100 L260,100 L260,140 L30,140 Z"/>
+
+      <!-- Hole -->
+      <circle class="svg-hole" cx="200" cy="120" r="9"/>
+      <line class="svg-axis" x1="200" y1="105" x2="200" y2="135"/>
+      <line class="svg-axis" x1="185" y1="120" x2="215" y2="120"/>
+
+      <!-- Datum B = primary (back, solid blue thick) -->
+      <line class="svg-primary" x1="30" y1="30" x2="30" y2="140"/>
+      <g transform="translate(-2,90)">
+        <rect class="svg-fcf-box" x="-22" y="-11" width="22" height="22" style="stroke:#7fb6e8"/>
+        <text class="svg-fcf-text" x="-16" y="4" style="fill:#7fb6e8">B</text>
+        <line x1="-22" y1="0" x2="-2" y2="0" stroke="#7fb6e8" stroke-width="0.9"/>
+      </g>
+
+      <!-- Datum A = secondary (bottom, dashed) -->
+      <line class="svg-secondary" x1="30" y1="140" x2="260" y2="140"/>
+      <g transform="translate(140,162)">
+        <rect class="svg-fcf-box" x="-11" y="-11" width="22" height="22" style="stroke:#7fb6e8"/>
+        <text class="svg-fcf-text" x="-5" y="4" style="fill:#7fb6e8">A</text>
+        <line x1="0" y1="-11" x2="0" y2="-22" stroke="#7fb6e8" stroke-width="0.9" style="stroke-dasharray: 5 3"/>
+      </g>
+
+      <!-- Slight tilt to imply re-seating: skew measurement -->
+      <line class="svg-meas" x1="30" y1="118" x2="200" y2="122"/>
+      <text class="svg-dim svg-accent-red" x="90" y="114">X = 170.04</text>
+      <line class="svg-meas" x1="200" y1="140" x2="200" y2="122"/>
+      <text class="svg-dim svg-accent-red" x="208" y="134">Y = 18</text>
+    </g>
+
+    <text class="svg-note" x="6" y="220">B seats first (back flat)</text>
+    <text class="svg-note" x="6" y="234">A only stops rotation</text>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  THE PRIMARY ROTATES THE FRAME.  EVERY MEASUREMENT FOLLOWS IT.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>The <strong>sequence</strong> in which datums are referenced inside a feature control frame. In the FCF <code>| ⌖ | Ø0.2 Ⓜ | A | B | C |</code>, the order <code>A B C</code> is not decoration — it tells the inspector exactly how the part is to be seated, and it tells the designer which surface dominates which.</p>
+<p>The same part, measured against <code>A B C</code> and against <code>B A C</code>, can produce different numbers and a different pass/fail. Order is a measurement decision, not a labeling one.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>The same L-shaped bracket inspected two ways. On the left, <strong>A primary, B secondary</strong>: the bracket seats flat on its broad bottom face (A), then slides until the back face (B) touches the secondary plane. The hole is measured perpendicular to A. On the right, <strong>B primary, A secondary</strong>: now the back face is what seats first, and the bottom face only stops the rotation. The hole's position relative to the datum reference frame is <em>different</em> — even though the part itself never changed.</p>
+<p>When the primary changes, the whole frame rotates. Every downstream measurement rotates with it.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Picking datum order by surface size or labeling alphabetically. The primary should be the surface that <strong>most controls function in the assembly</strong> — usually the largest mating face that resists the most force, or the face that lands first during installation. Secondary stops a remaining rotation. Tertiary stops the final slide. Function dictates order; the alphabet just labels it.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/08.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 08</span><span class="t">The 3-2-1 principle: how three datums lock a part in space</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
