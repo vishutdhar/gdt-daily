@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 10 · Material condition: tolerance that grows with the part — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 10: Material condition: tolerance that grows with the part. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>10</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§05 · Material Condition: MMC</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-10">
+      <div class="meta">
+        <span class="num">Lesson 10</span>
+        <span class="sep">·</span>
+        <span class="section">§05 · Material Condition: MMC</span>
+        <span class="status">Published · 2026-05-23</span>
+        <a class="permalink" href="../l/10.html" aria-label="permalink to lesson 10">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Material condition: tolerance that grows with the part</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 10: Material condition: tolerance that grows with the part">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 10 — Material condition: tolerance grows with size</title>
+  <desc>A horizontal feature-size axis from MMC to LMC. The allowed tolerance under MMC widens as the feature departs from MMC, gaining bonus tolerance. RFS stays flat.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-axis        { stroke: #7a7567; stroke-width: 0.8; }
+    .svg-tick        { stroke: #7a7567; stroke-width: 0.8; }
+    .svg-stated      { fill: rgba(236, 216, 177, 0.18); stroke: #ecd8b1; stroke-width: 1; }
+    .svg-bonus       { fill: rgba(127, 182, 232, 0.30); stroke: #7fb6e8; stroke-width: 1; }
+    .svg-rfs         { fill: rgba(239, 106, 74, 0.15); stroke: #ef6a4a; stroke-width: 1; stroke-dasharray: 4 3; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-accent-red  { fill: #ef6a4a; font-weight: 700; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">MATERIAL CONDITION</text>
+  <text class="svg-dim" x="36" y="58">feature size buys (or doesn't buy) extra tolerance</text>
+
+  <!-- X-axis: feature size MMC → LMC -->
+  <g transform="translate(80,310)">
+    <line class="svg-axis" x1="0" y1="0" x2="540" y2="0"/>
+    <!-- ticks -->
+    <line class="svg-tick" x1="0" y1="-4" x2="0" y2="6"/>
+    <line class="svg-tick" x1="540" y1="-4" x2="540" y2="6"/>
+    <line class="svg-tick" x1="180" y1="-3" x2="180" y2="3"/>
+    <line class="svg-tick" x1="360" y1="-3" x2="360" y2="3"/>
+
+    <text class="svg-label svg-accent-blue" x="-10" y="22">MMC</text>
+    <text class="svg-note" x="-30" y="36">hole Ø8.0 (tight)</text>
+    <text class="svg-label svg-accent-blue" x="514" y="22">LMC</text>
+    <text class="svg-note" x="498" y="36">hole Ø8.4 (loose)</text>
+
+    <text class="svg-label" x="240" y="22">FEATURE SIZE  →</text>
+  </g>
+
+  <!-- Row labels -->
+  <text class="svg-label svg-accent-blue" x="36" y="106">UNDER Ⓜ</text>
+  <text class="svg-label" x="36" y="200">STATED</text>
+  <text class="svg-label svg-accent-red" x="36" y="262">UNDER RFS</text>
+
+  <!-- Row 1: MMC wedge - widening tolerance -->
+  <g transform="translate(80,90)">
+    <!-- Wedge: starts at narrow (stated tolerance Ø0.2) at MMC, widens to Ø0.6 at LMC -->
+    <polygon class="svg-bonus" points="0,12 540,2 540,46 0,36"/>
+    <!-- Stated band overlay (the "no bonus" floor) -->
+    <rect class="svg-stated" x="0" y="12" width="540" height="24"/>
+    <!-- Arrow + label for bonus -->
+    <text class="svg-note svg-accent-blue" x="200" y="-2">BONUS = (actual size − MMC size)</text>
+    <text class="svg-dim svg-accent-blue" x="200" y="58">tolerance grows 1:1 with size departure</text>
+
+    <!-- At MMC tick -->
+    <text class="svg-dim" x="-6" y="24" text-anchor="end">Ø0.2</text>
+    <!-- At LMC tick -->
+    <text class="svg-dim svg-accent-blue" x="546" y="24">Ø0.6</text>
+  </g>
+
+  <!-- Row 2: stated -->
+  <g transform="translate(80,180)">
+    <rect class="svg-stated" x="0" y="0" width="540" height="22"/>
+    <text class="svg-note" x="200" y="-4">stated tolerance Ø0.2 (drawing value)</text>
+    <text class="svg-dim" x="-6" y="14" text-anchor="end">Ø0.2</text>
+    <text class="svg-dim" x="546" y="14">Ø0.2</text>
+  </g>
+
+  <!-- Row 3: RFS - flat -->
+  <g transform="translate(80,244)">
+    <rect class="svg-rfs" x="0" y="0" width="540" height="22"/>
+    <text class="svg-note" x="200" y="-4" style="fill:#ef6a4a">RFS: no bonus, tolerance is flat at Ø0.2</text>
+    <text class="svg-dim" x="-6" y="14" text-anchor="end">Ø0.2</text>
+    <text class="svg-dim" x="546" y="14">Ø0.2</text>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="354">TAKEAWAY  ·  Ⓜ TURNS SIZE SLACK INTO POSITION SLACK.  RFS DOES NOT.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>Whether the <strong>size of a feature</strong> can buy you extra geometric tolerance. Most GD&T callouts come with a stated tolerance — say, position within Ø0.2. A <strong>material condition modifier</strong> (Ⓜ for MMC, Ⓛ for LMC) flips a switch that says: <em>if the feature is made looser than its tightest material limit, the part earns additional tolerance equal to that departure</em>.</p>
+<p>In plain terms: a hole drilled a little oversize is easier to align with whatever goes through it, so it's allowed to be a little more off-center. The drawing acknowledges the physics of assembly instead of pretending every measurement is independent.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>A horizontal bar shows feature size sweeping from MMC (most material) on the left to LMC (least material) on the right. The <strong>stated tolerance</strong> is a fixed band (cream). Underneath, the <strong>allowed tolerance under Ⓜ</strong> is a wedge that widens as size moves toward LMC — every micrometer the hole grows past its MMC size adds the same amount to the position tolerance. That extra width is called <strong>bonus tolerance</strong> (blue).</p>
+<p>A third row shows RFS (no modifier): the band stays the same width regardless of size. Same drawing, very different floor.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Reading Ⓜ as "looser tolerance everywhere." It is not. At MMC size, the allowed tolerance is exactly the stated value — no bonus. The bonus only appears as the feature departs from MMC. Parts produced right at the tight end of the size range still have to hit position within Ø0.2 cold. The gift only arrives when there's slack to claim.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/09.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 09</span><span class="t">Primary, secondary, tertiary: order changes the answer</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
