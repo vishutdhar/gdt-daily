@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 11 · MMC defined: hole versus pin — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 11: MMC defined: hole versus pin. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>11</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§05 · Material Condition: MMC</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-11">
+      <div class="meta">
+        <span class="num">Lesson 11</span>
+        <span class="sep">·</span>
+        <span class="section">§05 · Material Condition: MMC</span>
+        <span class="status">Published · 2026-05-24</span>
+        <a class="permalink" href="../l/11.html" aria-label="permalink to lesson 11">↗ permalink</a>
+      </div>
+
+      <h3 class="title">MMC defined: hole versus pin</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 11: MMC defined: hole versus pin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 11 — MMC for a hole vs a pin</title>
+  <desc>Left column shows a hole going from small to large; MMC is at the smallest size. Right column shows a pin going from small to large; MMC is at the largest size. The rule: most material on the part.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-part        { fill: rgba(236, 216, 177, 0.14); stroke: #ecd8b1; stroke-width: 1.2; }
+    .svg-mmc         { fill: rgba(127, 182, 232, 0.25); stroke: #7fb6e8; stroke-width: 1.6; }
+    .svg-hole        { fill: #08080b; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-hole-mmc    { fill: #08080b; stroke: #7fb6e8; stroke-width: 1.6; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-arrow       { stroke: #7a7567; stroke-width: 1; fill: none; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">MMC : HOLE vs PIN</text>
+  <text class="svg-dim" x="36" y="58">maximum MATERIAL — not maximum dimension</text>
+
+  <line class="svg-divider" x1="360" y1="78" x2="360" y2="316"/>
+
+  <!-- LEFT: HOLE -->
+  <g transform="translate(40,98)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">INTERNAL FEATURE  ·  HOLE</text>
+
+    <!-- Three plates with hole growing left→right -->
+    <g transform="translate(0,30)">
+      <!-- Plate 1: small hole = MMC -->
+      <rect class="svg-part" x="0" y="0" width="86" height="86"/>
+      <circle class="svg-hole-mmc" cx="43" cy="43" r="10"/>
+      <text class="svg-label svg-accent-blue" x="22" y="106">MMC</text>
+      <text class="svg-note" x="14" y="120">Ø8.0</text>
+
+      <!-- Plate 2: mid -->
+      <rect class="svg-part" x="106" y="0" width="86" height="86"/>
+      <circle class="svg-hole" cx="149" cy="43" r="14"/>
+      <text class="svg-note" x="120" y="120">Ø8.2</text>
+
+      <!-- Plate 3: large hole = LMC -->
+      <rect class="svg-part" x="212" y="0" width="86" height="86"/>
+      <circle class="svg-hole" cx="255" cy="43" r="18"/>
+      <text class="svg-label" x="234" y="106">LMC</text>
+      <text class="svg-note" x="226" y="120">Ø8.4</text>
+
+      <!-- Arrow MMC → LMC -->
+      <line class="svg-arrow" x1="0" y1="142" x2="298" y2="142"/>
+      <polygon points="298,142 290,138 290,146" fill="#7a7567"/>
+      <text class="svg-note" x="100" y="156">size increases  →  material decreases</text>
+    </g>
+
+    <text class="svg-note svg-accent-blue" x="0" y="208">MMC = SMALLEST hole</text>
+    <text class="svg-note" x="0" y="222">(metal hasn't been removed yet)</text>
+  </g>
+
+  <!-- RIGHT: PIN -->
+  <g transform="translate(388,98)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">EXTERNAL FEATURE  ·  PIN</text>
+
+    <g transform="translate(0,30)">
+      <!-- Pin 1: small = LMC -->
+      <rect class="svg-part" x="20" y="32" width="50" height="22" rx="11"/>
+      <text class="svg-label" x="30" y="106">LMC</text>
+      <text class="svg-note" x="26" y="120">Ø7.6</text>
+
+      <!-- Pin 2: mid -->
+      <rect class="svg-part" x="116" y="28" width="64" height="30" rx="15"/>
+      <text class="svg-note" x="130" y="120">Ø7.8</text>
+
+      <!-- Pin 3: large = MMC -->
+      <rect class="svg-mmc" x="208" y="22" width="84" height="42" rx="21"/>
+      <text class="svg-label svg-accent-blue" x="230" y="106">MMC</text>
+      <text class="svg-note" x="226" y="120">Ø8.0</text>
+
+      <!-- Arrow LMC → MMC -->
+      <line class="svg-arrow" x1="0" y1="142" x2="298" y2="142"/>
+      <polygon points="298,142 290,138 290,146" fill="#7a7567"/>
+      <text class="svg-note" x="100" y="156">size increases  →  material increases</text>
+    </g>
+
+    <text class="svg-note svg-accent-blue" x="0" y="208">MMC = LARGEST pin</text>
+    <text class="svg-note" x="0" y="222">(metal is all still there)</text>
+  </g>
+
+  <!-- Rule strip at bottom -->
+  <g transform="translate(80,272)">
+    <rect x="0" y="0" width="560" height="32" fill="rgba(127,182,232,0.10)" stroke="#7fb6e8" stroke-width="0.8"/>
+    <text class="svg-dim svg-accent-blue" x="14" y="20">RULE  ·  MMC = the size at which assembly with the mate is HARDEST.</text>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  THINK MATERIAL, NOT MILLIMETERS.  HOLES SHRINK TO MMC; PINS GROW.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>The exact meaning of <strong>Maximum Material Condition</strong>. The phrase trips up everyone the first time: "maximum material" doesn't mean <em>biggest dimension</em>, it means <em>most material left on the part</em>. For an external feature (a pin, a boss, a shaft), more material means a <strong>larger</strong> size. For an internal feature (a hole, a slot, a bore), more material means a <strong>smaller</strong> size — the metal hasn't been removed yet.</p>
+<p>Get this backwards and every bonus-tolerance calculation, every virtual-condition number, every functional gage you design is off in the wrong direction.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>Two columns. On the left, a <strong>hole</strong> sweeps from its smallest size (most material remaining around it) to its largest. MMC is at the left end. On the right, a <strong>pin</strong> sweeps from its smallest size to its largest. MMC is at the <strong>right</strong> end. The arrows point in opposite directions but the rule is the same: pick the size at which the <strong>part weighs more</strong>.</p>
+<p>A simple rule lives below: <em>MMC = the size of the feature when assembly would be hardest.</em> A small hole and a large pin both make assembly harder — that's MMC.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Memorizing "MMC = max size" because it works for pins, then applying it to holes. It will work half the time. The correct mental model is mass, not dimension. If you can't remember which way the arrow points on a given feature, ask: <em>which size makes this harder to fit with its mate?</em> That's MMC, every time.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/10.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 10</span><span class="t">Material condition: tolerance that grows with the part</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
