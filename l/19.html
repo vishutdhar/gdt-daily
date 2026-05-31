@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 19 · Flatness: two parallel planes, no datum — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 19: Flatness: two parallel planes, no datum. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>19</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§08 · Form tolerances</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-19">
+      <div class="meta">
+        <span class="num">Lesson 19</span>
+        <span class="sep">·</span>
+        <span class="section">§08 · Form tolerances</span>
+        <span class="status">Published · 2026-05-31</span>
+        <a class="permalink" href="../l/19.html" aria-label="permalink to lesson 19">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Flatness: two parallel planes, no datum</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 19: Flatness: two parallel planes, no datum">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 19 — Flatness</title>
+  <desc>A warped surface enclosed by two parallel planes a distance t apart. No datum needed; the zone floats to find the tightest enclosure.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-part        { fill: rgba(236, 216, 177, 0.10); stroke: #ecd8b1; stroke-width: 1.2; }
+    .svg-feature     { stroke: #ecd8b1; stroke-width: 1.6; fill: none; }
+    .svg-zone-plane  { stroke: #7fb6e8; stroke-width: 1.2; fill: none; }
+    .svg-zone-fill   { fill: rgba(127, 182, 232, 0.10); stroke: none; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 11px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-leader      { stroke: #ecd8b1; stroke-width: 0.8; fill: none; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-dim-line    { stroke: #7fb6e8; stroke-width: 0.9; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">FLATNESS</text>
+  <text class="svg-dim" x="36" y="58">two parallel planes, a distance t apart — no datum needed</text>
+
+  <!-- The part with a wavy top surface -->
+  <g transform="translate(80,140)">
+    <!-- Two zone planes (tilted slightly to demonstrate float) -->
+    <path class="svg-zone-fill" d="M0,30 L520,18 L520,48 L0,60 Z"/>
+    <line class="svg-zone-plane" x1="0" y1="30" x2="520" y2="18"/>
+    <line class="svg-zone-plane" x1="0" y1="60" x2="520" y2="48"/>
+
+    <!-- Distance arrow between planes -->
+    <line class="svg-dim-line" x1="540" y1="22" x2="540" y2="46"/>
+    <polygon points="540,22 537,28 543,28" fill="#7fb6e8"/>
+    <polygon points="540,46 537,40 543,40" fill="#7fb6e8"/>
+    <text class="svg-dim svg-accent-blue" x="550" y="38">t = 0.08</text>
+
+    <!-- The wavy actual surface, contained entirely between planes -->
+    <path class="svg-feature" d="M10,52 Q60,32 110,46 Q160,58 210,40 Q260,28 310,44 Q360,56 410,38 Q460,28 510,40"/>
+
+    <!-- Bulk part body below -->
+    <path class="svg-part" d="M10,52 Q60,32 110,46 Q160,58 210,40 Q260,28 310,44 Q360,56 410,38 Q460,28 510,40 L510,140 L10,140 Z"/>
+
+    <text class="svg-note" x="0" y="170">actual surface (exaggerated)</text>
+    <text class="svg-note svg-accent-blue" x="0" y="184">zone planes float to find tightest enclosure</text>
+
+    <!-- FCF -->
+    <g transform="translate(420,-60)">
+      <rect class="svg-fcf-box" x="0" y="0" width="60" height="22"/>
+      <line x1="24" y1="0" x2="24" y2="22" stroke="#ecd8b1" stroke-width="1"/>
+      <text class="svg-fcf-text" x="6" y="15" style="font-size: 14px">▱</text>
+      <text class="svg-fcf-text" x="30" y="15">0.08</text>
+    </g>
+    <line class="svg-leader" x1="450" y1="-38" x2="380" y2="40"/>
+    <circle cx="380" cy="40" r="2" fill="#ecd8b1"/>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  FLATNESS = SANDWICHED IN A SLAB.  NO DATUM, NO ORIENTATION.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>How <strong>flat</strong> a planar surface is. Flatness is a self-referencing form control: the tolerance zone is two parallel planes a distance <code>t</code> apart, and <strong>the entire surface</strong> must lie between them. No datum is needed — flatness doesn't care which way the surface is tipped, only whether it could be sandwiched between two ideal planes that close <code>t</code> apart.</p>
+<p>Surface plates, gasket faces, seating surfaces for bearings — anywhere a flat-to-flat mate carries load or seals — get flatness.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>A surface that's slightly warped, drawn with its high and low points exaggerated. Above and below the surface sit two parallel reference planes (blue) at <code>t = 0.08</code>. Every point on the real surface lies between them. The two planes are free to <strong>float and tilt</strong> to find the tightest enclosure — the inspector isn't told where to put them, only that they must be parallel and <code>t</code> apart.</p>
+<p>The FCF on the side shows the flatness symbol (<code>▱</code> — a parallelogram tilted) and the bare tolerance value. No datum letter — because there isn't one to use.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Confusing flatness with parallelism. Parallelism is <strong>flatness with a datum</strong> — it constrains the surface to be parallel to some other reference. Flatness alone says nothing about orientation; it only says the surface itself can be sandwiched in a thin slab. If a part is wedge-shaped but each face is perfectly smooth, both faces pass flatness — even though they are wildly out of parallel.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/18.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 18</span><span class="t">Straightness: line elements or derived axis</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
