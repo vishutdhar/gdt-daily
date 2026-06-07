@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 26 · Diameter symbol: round zone vs square zone — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 26: Diameter symbol: round zone vs square zone. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>26</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§10 · Location: Position</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-26">
+      <div class="meta">
+        <span class="num">Lesson 26</span>
+        <span class="sep">·</span>
+        <span class="section">§10 · Location: Position</span>
+        <span class="status">Published · 2026-06-07</span>
+        <a class="permalink" href="../l/26.html" aria-label="permalink to lesson 26">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Diameter symbol: round zone vs square zone</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 26: Diameter symbol: round zone vs square zone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 26 — Round zone vs square zone</title>
+  <desc>Side-by-side comparison of a square ±0.1×±0.1 zone and a Ø0.2 round zone. An example point at (0.09, 0.09) is inside the square but outside the circle.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-zone-sq     { fill: rgba(239, 106, 74, 0.18); stroke: #ef6a4a; stroke-width: 1.4; }
+    .svg-zone-round  { fill: rgba(127, 182, 232, 0.18); stroke: #7fb6e8; stroke-width: 1.4; }
+    .svg-zone-ghost  { fill: none; stroke: #5a5a4e; stroke-width: 0.8; stroke-dasharray: 3 3; }
+    .svg-axis        { stroke: #7a7567; stroke-width: 0.7; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-accent-red  { fill: #ef6a4a; font-weight: 700; }
+    .svg-dot         { fill: #ecd8b1; stroke: #08080b; stroke-width: 1; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 11px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">ROUND ZONE CUTS OFF SQUARE CORNERS</text>
+  <text class="svg-dim" x="36" y="58">same axis limits, tighter diagonals</text>
+
+  <line class="svg-divider" x1="360" y1="78" x2="360" y2="298"/>
+
+  <!-- LEFT: square zone from +/- -->
+  <g transform="translate(180,210)">
+    <text class="svg-label svg-accent-red" x="-130" y="-128">±0.1 X · ±0.1 Y  (square)</text>
+
+    <!-- Axes -->
+    <line class="svg-axis" x1="-110" y1="0" x2="110" y2="0"/>
+    <line class="svg-axis" x1="0" y1="-110" x2="0" y2="110"/>
+
+    <!-- Square zone (scale: 1 unit = 500 px → 0.1 = 50px? use 0.1 → 60px so zone is 120px wide) -->
+    <rect class="svg-zone-sq" x="-60" y="-60" width="120" height="120"/>
+
+    <!-- Ghost circle for comparison -->
+    <circle class="svg-zone-ghost" cx="0" cy="0" r="60"/>
+
+    <!-- Sample point at (0.09, 0.09) → (54, -54) -->
+    <circle class="svg-dot" cx="54" cy="-54" r="4"/>
+    <text class="svg-note svg-accent-red" x="-44" y="120">point (0.09, 0.09)</text>
+    <text class="svg-note svg-accent-red" x="-44" y="134">INSIDE the square → accept</text>
+
+    <!-- FCF -->
+    <g transform="translate(-44,-178)">
+      <rect class="svg-fcf-box" x="0" y="0" width="120" height="20" style="stroke:#ef6a4a"/>
+      <text class="svg-fcf-text" x="6" y="14" style="fill:#ef6a4a">X 30 ±0.1 · Y 20 ±0.1</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: round zone from Ø position -->
+  <g transform="translate(540,210)">
+    <text class="svg-label svg-accent-blue" x="-130" y="-128">⌖ Ø0.2  (round)</text>
+
+    <!-- Axes -->
+    <line class="svg-axis" x1="-110" y1="0" x2="110" y2="0"/>
+    <line class="svg-axis" x1="0" y1="-110" x2="0" y2="110"/>
+
+    <!-- Round zone (radius 60 = Ø0.2 at same scale) -->
+    <circle class="svg-zone-round" cx="0" cy="0" r="60"/>
+
+    <!-- Ghost square for comparison -->
+    <rect class="svg-zone-ghost" x="-60" y="-60" width="120" height="120"/>
+
+    <!-- Sample point at (0.09, 0.09) → (54, -54) - same point as left -->
+    <circle class="svg-dot" cx="54" cy="-54" r="4"/>
+    <text class="svg-note svg-accent-blue" x="-44" y="120">point (0.09, 0.09)</text>
+    <text class="svg-note svg-accent-blue" x="-44" y="134">OUTSIDE the circle → reject</text>
+
+    <!-- FCF -->
+    <g transform="translate(-44,-178)">
+      <rect class="svg-fcf-box" x="0" y="0" width="120" height="20" style="stroke:#7fb6e8"/>
+      <text class="svg-fcf-text" x="6" y="14" style="fill:#7fb6e8">⌖   Ø0.2   A B C</text>
+    </g>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  Ø MAKES A ROUND ZONE, NOT A COORDINATE SQUARE.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>The shape of the position tolerance zone. With <code>Ø</code> in the tolerance block, the zone is a <strong>cylinder</strong> — round in cross-section. Without <code>Ø</code>, the zone is two parallel planes — effectively a thin slab, useful for slots and non-cylindrical features. For a hole or pin, you almost always want <code>Ø</code>.</p>
+<p>This one symbol is the most consequential character on most FCFs. Adding it turns a coordinate-style 0.2×0.2 square into a Ø0.2 circle: same limit on the axes, but tighter in the corners because the circular zone is inscribed in the square.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>Two zones drawn at the same scale. <strong>Left</strong>: the implied square zone from plus/minus tolerancing — <code>±0.1</code> on X and <code>±0.1</code> on Y — a 0.2 × 0.2 square. <strong>Right</strong>: a Ø0.2 round zone from position-with-diameter. The circle touches the square on the axes but cuts off the square's diagonal corners.</p>
+<p>Two example hole-center dots illustrate the consequence: a center at <code>(0.09, 0.09)</code> is <strong>inside</strong> the square (each axis is ≤ 0.1) but <strong>outside</strong> the circle (radius ≈ 0.127, > 0.1). Same measured X/Y coordinates. The +/- scheme accepts it; the position-Ø scheme rejects it because the radial error is too large.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Omitting <code>Ø</code> when you wanted a round zone. Without <code>Ø</code>, the position tolerance is treated as two parallel planes — a slab, not a cylinder. The inspector dutifully checks against the wrong zone shape, and parts that should have passed get rejected, while parts that shouldn't have passed slip through (depending on the orientation of the slab). On any axis-symmetric feature, the <code>Ø</code> is mandatory.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/25.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 25</span><span class="t">Position: the workhorse of GD&amp;T</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
