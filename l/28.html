@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 28 · Composite position: pattern vs feature-to-feature — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 28: Composite position: pattern vs feature-to-feature. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>28</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§10 · Location: Position</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-28">
+      <div class="meta">
+        <span class="num">Lesson 28</span>
+        <span class="sep">·</span>
+        <span class="section">§10 · Location: Position</span>
+        <span class="status">Published · 2026-06-09</span>
+        <a class="permalink" href="../l/28.html" aria-label="permalink to lesson 28">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Composite position: pattern vs feature-to-feature</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 28: Composite position: pattern vs feature-to-feature">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 28 — Composite position tolerance</title>
+  <desc>Composite FCF with a loose outer pattern zone and a tight inner feature-to-feature zone. Each hole's axis must satisfy both.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-part        { fill: rgba(236, 216, 177, 0.08); stroke: #ecd8b1; stroke-width: 1.2; }
+    .svg-hole        { fill: #08080b; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-zone-pattern { fill: rgba(236, 216, 177, 0.18); stroke: #ecd8b1; stroke-width: 1; stroke-dasharray: 4 3; }
+    .svg-zone-inner  { fill: rgba(127, 182, 232, 0.30); stroke: #7fb6e8; stroke-width: 1.2; }
+    .svg-true        { fill: #ecd8b1; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 11px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">COMPOSITE POSITION</text>
+  <text class="svg-dim" x="36" y="58">one symbol · two zones · pattern loose · features tight</text>
+
+  <line class="svg-divider" x1="430" y1="78" x2="430" y2="298"/>
+
+  <!-- LEFT: the part with four holes and dual zones at each true position -->
+  <g transform="translate(40,108)">
+    <rect class="svg-part" x="0" y="0" width="360" height="200"/>
+
+    <!-- Four true positions: outer loose zones (large dashed cream) + inner tight zones (small solid blue) -->
+    <g transform="translate(80,40)">
+      <circle class="svg-zone-pattern" cx="0" cy="0" r="28"/>
+      <circle class="svg-zone-inner" cx="0" cy="0" r="8"/>
+      <circle class="svg-hole" cx="6" cy="-3" r="14"/>
+      <circle class="svg-true" cx="0" cy="0" r="1.4"/>
+    </g>
+    <g transform="translate(280,40)">
+      <circle class="svg-zone-pattern" cx="0" cy="0" r="28"/>
+      <circle class="svg-zone-inner" cx="0" cy="0" r="8"/>
+      <circle class="svg-hole" cx="5" cy="-2" r="14"/>
+      <circle class="svg-true" cx="0" cy="0" r="1.4"/>
+    </g>
+    <g transform="translate(80,150)">
+      <circle class="svg-zone-pattern" cx="0" cy="0" r="28"/>
+      <circle class="svg-zone-inner" cx="0" cy="0" r="8"/>
+      <circle class="svg-hole" cx="4" cy="-2" r="14"/>
+      <circle class="svg-true" cx="0" cy="0" r="1.4"/>
+    </g>
+    <g transform="translate(280,150)">
+      <circle class="svg-zone-pattern" cx="0" cy="0" r="28"/>
+      <circle class="svg-zone-inner" cx="0" cy="0" r="8"/>
+      <circle class="svg-hole" cx="5" cy="-3" r="14"/>
+      <circle class="svg-true" cx="0" cy="0" r="1.4"/>
+    </g>
+
+    <text class="svg-note" x="0" y="220">outer (cream dashed) = pattern locator Ø0.5</text>
+    <text class="svg-note svg-accent-blue" x="0" y="234">inner (blue solid) = feature-to-feature Ø0.1</text>
+  </g>
+
+  <!-- RIGHT: composite FCF -->
+  <g transform="translate(460,140)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">THE FCF</text>
+
+    <g transform="translate(0,18)">
+      <!-- Stacked FCF: one symbol on left spanning two rows -->
+      <rect class="svg-fcf-box" x="0" y="0" width="200" height="44"/>
+      <!-- Vertical divider after symbol -->
+      <line x1="32" y1="0" x2="32" y2="44" stroke="#ecd8b1"/>
+      <!-- Horizontal divider between rows -->
+      <line x1="32" y1="22" x2="200" y2="22" stroke="#ecd8b1"/>
+      <!-- Row 1 dividers -->
+      <line x1="90" y1="0" x2="90" y2="22" stroke="#ecd8b1"/>
+      <line x1="120" y1="0" x2="120" y2="22" stroke="#ecd8b1"/>
+      <line x1="150" y1="0" x2="150" y2="22" stroke="#ecd8b1"/>
+      <!-- Row 2 dividers -->
+      <line x1="90" y1="22" x2="90" y2="44" stroke="#ecd8b1"/>
+
+      <text class="svg-fcf-text" x="10" y="28">⌖</text>
+      <text class="svg-fcf-text" x="40" y="16">Ø0.5</text>
+      <text class="svg-fcf-text" x="100" y="16">A</text>
+      <text class="svg-fcf-text" x="130" y="16">B</text>
+      <text class="svg-fcf-text" x="158" y="16">C</text>
+      <text class="svg-fcf-text" x="40" y="38">Ø0.1</text>
+      <text class="svg-fcf-text" x="100" y="38">A</text>
+    </g>
+
+    <text class="svg-note" x="0" y="92">upper line: pattern → A B C</text>
+    <text class="svg-note svg-accent-blue" x="0" y="106">lower line: hole-to-hole → A only</text>
+    <text class="svg-note" x="0" y="132">composite: lower drops B and C</text>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  THE PATTERN CAN DRIFT.  THE HOLES INSIDE IT MUST NOT.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>A two-line position FCF that simultaneously controls a pattern of features in two ways: where the <strong>whole pattern</strong> sits relative to the datums (a loose tolerance, the upper line) and where the features sit <strong>relative to each other</strong> (a tight tolerance, the lower line). One symbol, two zones, nested.</p>
+<p>This is the right tool when, say, a four-hole bolt pattern needs to land roughly on the part (an outer zone of ±1 mm is fine for assembly) but the four holes need to be tightly aligned to each other so that the mating part's bolts can pass through (an inner zone of ±0.1 mm). Composite position expresses both budgets at once.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>A composite FCF for a four-hole pattern. <strong>Upper line</strong> <code>⌖ Ø0.5 A B C</code> defines a large blue cylindrical zone for each hole, oriented and located against the full datum reference frame. <strong>Lower line</strong> <code>⌖ Ø0.1</code> (no datums repeated explicitly under the rule — see lesson 36) defines a small inner zone that floats with the pattern: it controls feature-to-feature only.</p>
+<p>Two snapshots: a pattern that's well-located and tightly grouped (passes both), and a pattern that's shifted off-pattern but still well-grouped (fails upper, passes lower — fails the FCF).</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Reading both lines as if both zones were locked to the datums identically. They aren't. In Y14.5-2018, the lower line of a <strong>composite</strong> FCF is the feature-relating tolerance zone framework (FRTZF): it tightens feature-to-feature spacing inside the pattern. Repeated datums in that lower line govern orientation only, never location, so the pattern remains translationally free as a group. That's exactly what makes composite different from a multi-single-segment FCF (lesson 36). Read which one you've drawn carefully — the rule of thumb: one ⌖ symbol on the left, both rows; two separate ⌖ symbols stacked = multi-single-segment.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/27.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 27</span><span class="t">Position at MMC: where bonuses compound</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
