@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 30 · Profile of a line: 2D control on a curved feature — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 30: Profile of a line: 2D control on a curved feature. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>30</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§11 · Profile tolerances</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-30">
+      <div class="meta">
+        <span class="num">Lesson 30</span>
+        <span class="sep">·</span>
+        <span class="section">§11 · Profile tolerances</span>
+        <span class="status">Published · 2026-06-11</span>
+        <a class="permalink" href="../l/30.html" aria-label="permalink to lesson 30">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Profile of a line: 2D control on a curved feature</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 30: Profile of a line: 2D control on a curved feature">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 30 — Profile of a line</title>
+  <desc>A basic curved profile with two offset curves forming a 2D tolerance band. The actual surface, sliced at any cross-section, lies inside the band.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-basic       { stroke: #ecd8b1; stroke-width: 1.6; fill: none; }
+    .svg-offset      { stroke: #7fb6e8; stroke-width: 1; fill: none; stroke-dasharray: 4 3; }
+    .svg-zone-fill   { fill: rgba(127, 182, 232, 0.12); stroke: none; }
+    .svg-actual      { stroke: #ecd8b1; stroke-width: 1.4; fill: none; }
+    .svg-slice       { stroke: #b9b29d; stroke-width: 0.6; stroke-dasharray: 2 3; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 12px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-datum       { stroke: #7fb6e8; stroke-width: 2; fill: none; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">PROFILE OF A LINE  ·  ⌒</text>
+  <text class="svg-dim" x="36" y="58">two offset curves at every cross-section · 2D zone</text>
+
+  <line class="svg-divider" x1="460" y1="78" x2="460" y2="298"/>
+
+  <!-- LEFT: curve with zone -->
+  <g transform="translate(60,180)">
+    <!-- Zone band (fill between offsets) -->
+    <path class="svg-zone-fill" d="
+      M 0,-14 Q 100,-74 200,-44 Q 280,-22 360,-54
+      L 360,-34 Q 280,-2 200,-24 Q 100,-54 0,6 Z"/>
+
+    <!-- Offset curves (dashed blue) -->
+    <path class="svg-offset" d="M0,-14 Q 100,-74 200,-44 Q 280,-22 360,-54"/>
+    <path class="svg-offset" d="M0,6   Q 100,-54 200,-24 Q 280,-2  360,-34"/>
+
+    <!-- Basic profile (cream solid, midline) -->
+    <path class="svg-basic" d="M0,-4 Q 100,-64 200,-34 Q 280,-12 360,-44"/>
+
+    <!-- Actual surface (slightly wavy, stays inside zone) -->
+    <path class="svg-actual" d="M0,-6 Q 50,-32 100,-46 Q 150,-58 200,-36 Q 250,-22 300,-26 Q 330,-30 360,-40"/>
+
+    <!-- Cross-section slices (vertical dashed lines) -->
+    <line class="svg-slice" x1="80"  y1="20" x2="80"  y2="-90"/>
+    <line class="svg-slice" x1="180" y1="20" x2="180" y2="-90"/>
+    <line class="svg-slice" x1="280" y1="20" x2="280" y2="-90"/>
+
+    <text class="svg-note" x="62"  y="32">slice 1</text>
+    <text class="svg-note" x="162" y="32">slice 2</text>
+    <text class="svg-note" x="262" y="32">slice 3</text>
+
+    <!-- Labels -->
+    <text class="svg-dim svg-accent-blue" x="320" y="-72">offset +t/2</text>
+    <text class="svg-dim svg-accent-blue" x="320" y="-2">offset −t/2</text>
+    <text class="svg-dim" x="6" y="-30">basic profile</text>
+  </g>
+
+  <!-- Datum A line below part -->
+  <g transform="translate(60,232)">
+    <line class="svg-datum" x1="0" y1="0" x2="360" y2="0"/>
+    <text class="svg-fcf-text" x="368" y="5" style="fill:#7fb6e8">A</text>
+  </g>
+
+  <!-- RIGHT: zoom-in of one slice -->
+  <g transform="translate(498,170)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">ONE SLICE</text>
+
+    <!-- 2D band cross-view -->
+    <g transform="translate(0,18)">
+      <line class="svg-offset" x1="0" y1="0" x2="160" y2="0"/>
+      <line class="svg-basic" x1="0" y1="20" x2="160" y2="20"/>
+      <line class="svg-offset" x1="0" y1="40" x2="160" y2="40"/>
+      <rect class="svg-zone-fill" x="0" y="0" width="160" height="40"/>
+
+      <!-- Actual surface element inside -->
+      <path class="svg-actual" d="M0,15 Q 40,8 80,22 Q 120,36 160,18"/>
+
+      <!-- dim arrow t -->
+      <line stroke="#7fb6e8" stroke-width="0.9" x1="170" y1="0" x2="170" y2="40"/>
+      <polygon points="170,0 167,6 173,6" fill="#7fb6e8"/>
+      <polygon points="170,40 167,34 173,34" fill="#7fb6e8"/>
+      <text class="svg-dim svg-accent-blue" x="178" y="24">t = 0.2</text>
+    </g>
+
+    <!-- FCF -->
+    <g transform="translate(0,100)">
+      <rect class="svg-fcf-box" x="0" y="0" width="120" height="24"/>
+      <line x1="34" y1="0" x2="34" y2="24" stroke="#ecd8b1"/>
+      <line x1="86" y1="0" x2="86" y2="24" stroke="#ecd8b1"/>
+      <text class="svg-fcf-text" x="10" y="17" style="font-size: 15px">⌒</text>
+      <text class="svg-fcf-text" x="42" y="17">0.2</text>
+      <text class="svg-fcf-text" x="94" y="17">A</text>
+    </g>
+    <text class="svg-note" x="0" y="142">no Ø — zone is 2D by definition</text>
+    <text class="svg-note" x="0" y="156">each slice checked independently</text>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  EVERY CROSS-SECTION RIDES BETWEEN TWO OFFSET CURVES.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p><strong>Profile of a line</strong> (⌒) controls the shape of <em>a single cross-section</em> of a feature relative to a <strong>basic profile</strong> — the ideal curve defined by basic dimensions on the drawing. The tolerance zone is <strong>two offset curves</strong>, parallel to the basic profile, with the tolerance value (e.g. 0.2) as the total width between them. The actual surface, sliced at any cross-section, must lie inside that 2D band.</p>
+<p>This is the airfoil/molding/cam control. Each slice of the part has to follow the curve, but slices don't have to be related to each other — that's what <em>profile of a surface</em> (next lesson) is for.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>A curved aerodynamic profile (basic curve, cream) with two offset curves (blue dashed) drawn ±t/2 on either side of it. A few cross-section slices show the actual surface (cream solid) wandering inside the zone — at each slice, the surface stays between the two offsets.</p>
+<p>The FCF reads ⌒ 0.2 A. No Ø needed (profile of a line is inherently a 2D zone). Datum A orients the basic profile in space.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Confusing profile of a line with profile of a surface. <strong>Profile of a line</strong> is checked at <em>each cross-section independently</em> — one slice can lean one way and the next slice the other, as long as each slice stays in its own 2D zone. <strong>Profile of a surface</strong> ties them together — the whole 3D surface must fit between two offset <em>surfaces</em>. If you want to control twist or warpage along the length of a curved feature, you almost always want surface, not line.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/29.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 29</span><span class="t">Concentricity and symmetry: deprecated, use position</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
