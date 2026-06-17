@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <title>Lesson 36 · Composite vs multi-single-segment: same shape, different rules — GDT Daily</title>
+  <meta name="description" content="GDT Daily, Lesson 36: Composite vs multi-single-segment: same shape, different rules. ASME Y14.5-2018 microlearning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="page page--lesson">
+  <header class="titleblock" aria-label="title block">
+    <div class="tb-row tb-row--brand">
+      <div class="tb-cell tb-cell--name">
+        <span class="tb-tag">drawing</span>
+        <a class="tb-lockup" href="../index.html"><span class="dot"></span><span class="wordmark">GDT Daily</span></a>
+      </div>
+      <div class="tb-cell tb-cell--counter">
+        <span class="tb-tag">sheet</span>
+        <span class="tb-counter"><b>36</b><span class="slash">/</span>38</span>
+      </div>
+    </div>
+    <div class="tb-row tb-row--meta">
+      <div class="tb-cell"><span class="tb-tag">section</span><span class="tb-value">§13 · Advanced</span></div>
+      <div class="tb-cell"><span class="tb-tag">standard</span><span class="tb-value">ASME Y14.5-2018</span></div>
+      <div class="tb-cell tb-cell--source"><span class="tb-tag">return</span><a class="tb-value" href="../index.html">← all lessons</a></div>
+    </div>
+  </header>
+
+  <main class="page-main page-main--lesson">
+    <article class="lesson published" id="lesson-36">
+      <div class="meta">
+        <span class="num">Lesson 36</span>
+        <span class="sep">·</span>
+        <span class="section">§13 · Advanced</span>
+        <span class="status">Published · 2026-06-17</span>
+        <a class="permalink" href="../l/36.html" aria-label="permalink to lesson 36">↗ permalink</a>
+      </div>
+
+      <h3 class="title">Composite vs multi-single-segment: same shape, different rules</h3>
+
+      <div class="diagram" role="img" aria-label="Diagram for lesson 36: Composite vs multi-single-segment: same shape, different rules">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <title>Lesson 36 — Composite vs multi-single-segment FCF</title>
+  <desc>Two stacked-row FCFs that look nearly identical. Composite shares one symbol across rows; multi-single-segment has a separate symbol per row. Composite lets the inner zone translate.</desc>
+  <style>
+    .svg-panel-title { font-size: 13px; font-weight: 700; fill: #ecd8b1; letter-spacing: 0.18em; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .svg-label       { font-size: 10.5px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
+    .svg-dim         { font-size: 11px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-note        { font-size: 10px; fill: #b9b29d; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.04em; }
+    .svg-takeaway    { font-size: 11.5px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.12em; font-weight: 600; }
+    .svg-part        { fill: rgba(236, 216, 177, 0.08); stroke: #ecd8b1; stroke-width: 1.2; }
+    .svg-hole        { fill: #08080b; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-zone-outer  { fill: rgba(236, 216, 177, 0.10); stroke: #ecd8b1; stroke-width: 0.8; stroke-dasharray: 3 3; }
+    .svg-zone-inner  { fill: rgba(127, 182, 232, 0.28); stroke: #7fb6e8; stroke-width: 1; }
+    .svg-true        { fill: #ecd8b1; }
+    .svg-shift       { stroke: #ef6a4a; stroke-width: 1.2; fill: none; }
+    .svg-divider     { stroke: #4a4a40; stroke-width: 0.6; stroke-dasharray: 2 4; }
+    .svg-accent-blue { fill: #7fb6e8; font-weight: 700; }
+    .svg-accent-red  { fill: #ef6a4a; font-weight: 700; }
+    .svg-fcf-box     { fill: #141a2c; stroke: #ecd8b1; stroke-width: 1; }
+    .svg-fcf-text    { font-size: 11px; fill: #ecd8b1; font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+
+  <text class="svg-panel-title" x="36" y="36">COMPOSITE  vs  MULTI-SINGLE-SEGMENT</text>
+  <text class="svg-dim" x="36" y="58">one shared symbol = composite · one symbol per row = multi-single-segment</text>
+
+  <line class="svg-divider" x1="360" y1="80" x2="360" y2="298"/>
+
+  <!-- LEFT: COMPOSITE -->
+  <g transform="translate(40,108)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">COMPOSITE  ·  one ⌖ spans both rows</text>
+
+    <!-- FCF: shared symbol cell on left -->
+    <g transform="translate(0,16)">
+      <rect class="svg-fcf-box" x="0" y="0" width="230" height="44"/>
+      <!-- Vertical after symbol (shared cell) -->
+      <line x1="32" y1="0" x2="32" y2="44" stroke="#ecd8b1"/>
+      <!-- Horizontal between rows (does NOT cross symbol cell) -->
+      <line x1="32" y1="22" x2="230" y2="22" stroke="#ecd8b1"/>
+      <!-- Row 1 dividers: tol / A / B / C -->
+      <line x1="90" y1="0" x2="90" y2="22" stroke="#ecd8b1"/>
+      <line x1="130" y1="0" x2="130" y2="22" stroke="#ecd8b1"/>
+      <line x1="170" y1="0" x2="170" y2="22" stroke="#ecd8b1"/>
+      <!-- Row 2 dividers: tol / A / B / C  -->
+      <line x1="90" y1="22" x2="90" y2="44" stroke="#ecd8b1"/>
+      <line x1="130" y1="22" x2="130" y2="44" stroke="#ecd8b1"/>
+      <line x1="170" y1="22" x2="170" y2="44" stroke="#ecd8b1"/>
+
+      <text class="svg-fcf-text" x="10" y="28" style="font-size: 14px">⌖</text>
+      <text class="svg-fcf-text" x="40" y="16">Ø0.5</text>
+      <text class="svg-fcf-text" x="100" y="16">A</text>
+      <text class="svg-fcf-text" x="138" y="16">B</text>
+      <text class="svg-fcf-text" x="178" y="16">C</text>
+      <text class="svg-fcf-text" x="40" y="38">Ø0.1</text>
+      <text class="svg-fcf-text" x="100" y="38">A</text>
+      <text class="svg-fcf-text" x="138" y="38">B</text>
+      <text class="svg-fcf-text" x="178" y="38">C</text>
+    </g>
+
+    <text class="svg-note" x="0" y="78">lower datums  =  ROTATION ONLY</text>
+    <text class="svg-note" x="0" y="92">pattern free to translate</text>
+
+    <!-- Pattern view -->
+    <g transform="translate(40,130)">
+      <rect class="svg-part" x="0" y="0" width="220" height="120"/>
+
+      <!-- Outer pattern zone (large dashed cream) — but shifted! -->
+      <g transform="translate(20,12)">
+        <!-- True positions (red dots) at original basic locations -->
+        <circle class="svg-true" cx="40" cy="20" r="1.4" fill="#ef6a4a"/>
+        <circle class="svg-true" cx="140" cy="20" r="1.4" fill="#ef6a4a"/>
+        <circle class="svg-true" cx="40" cy="80" r="1.4" fill="#ef6a4a"/>
+        <circle class="svg-true" cx="140" cy="80" r="1.4" fill="#ef6a4a"/>
+
+        <!-- Inner zones shifted as a group (composite freedom) -->
+        <g transform="translate(8,4)">
+          <circle class="svg-zone-inner" cx="40" cy="20" r="8"/>
+          <circle class="svg-zone-inner" cx="140" cy="20" r="8"/>
+          <circle class="svg-zone-inner" cx="40" cy="80" r="8"/>
+          <circle class="svg-zone-inner" cx="140" cy="80" r="8"/>
+        </g>
+
+        <!-- shift indicator -->
+        <line class="svg-shift" x1="40" y1="20" x2="48" y2="24"/>
+        <polygon points="48,24 44,22 45,26" fill="#ef6a4a"/>
+      </g>
+
+      <text class="svg-note" x="6" y="138">inner zones drift together  ↗</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: MULTI-SINGLE-SEGMENT -->
+  <g transform="translate(384,108)">
+    <text class="svg-label svg-accent-blue" x="0" y="0">MULTI-SINGLE-SEGMENT  ·  ⌖ on each row</text>
+
+    <!-- FCF: separate symbol cells (each row has its own ⌖) -->
+    <g transform="translate(0,16)">
+      <rect class="svg-fcf-box" x="0" y="0" width="230" height="44"/>
+      <!-- Vertical after symbol in row 1 -->
+      <line x1="32" y1="0" x2="32" y2="22" stroke="#ecd8b1"/>
+      <!-- Vertical after symbol in row 2 (independent) -->
+      <line x1="32" y1="22" x2="32" y2="44" stroke="#ecd8b1"/>
+      <!-- Horizontal between rows (CROSSES all columns including symbol) -->
+      <line x1="0" y1="22" x2="230" y2="22" stroke="#ecd8b1"/>
+      <!-- Row 1 dividers -->
+      <line x1="90" y1="0" x2="90" y2="22" stroke="#ecd8b1"/>
+      <line x1="130" y1="0" x2="130" y2="22" stroke="#ecd8b1"/>
+      <line x1="170" y1="0" x2="170" y2="22" stroke="#ecd8b1"/>
+      <!-- Row 2 dividers -->
+      <line x1="90" y1="22" x2="90" y2="44" stroke="#ecd8b1"/>
+      <line x1="130" y1="22" x2="130" y2="44" stroke="#ecd8b1"/>
+      <line x1="170" y1="22" x2="170" y2="44" stroke="#ecd8b1"/>
+
+      <text class="svg-fcf-text" x="10" y="16" style="font-size: 14px">⌖</text>
+      <text class="svg-fcf-text" x="10" y="38" style="font-size: 14px">⌖</text>
+      <text class="svg-fcf-text" x="40" y="16">Ø0.5</text>
+      <text class="svg-fcf-text" x="100" y="16">A</text>
+      <text class="svg-fcf-text" x="138" y="16">B</text>
+      <text class="svg-fcf-text" x="178" y="16">C</text>
+      <text class="svg-fcf-text" x="40" y="38">Ø0.1</text>
+      <text class="svg-fcf-text" x="100" y="38">A</text>
+      <text class="svg-fcf-text" x="138" y="38">B</text>
+      <text class="svg-fcf-text" x="178" y="38">C</text>
+    </g>
+
+    <text class="svg-note" x="0" y="78">all datums  =  FULL CONSTRAINT every row</text>
+    <text class="svg-note" x="0" y="92">inner zones pinned to A B C</text>
+
+    <!-- Pattern view -->
+    <g transform="translate(40,130)">
+      <rect class="svg-part" x="0" y="0" width="220" height="120"/>
+
+      <g transform="translate(20,12)">
+        <!-- True positions -->
+        <circle class="svg-true" cx="40" cy="20" r="1.4" fill="#ecd8b1"/>
+        <circle class="svg-true" cx="140" cy="20" r="1.4" fill="#ecd8b1"/>
+        <circle class="svg-true" cx="40" cy="80" r="1.4" fill="#ecd8b1"/>
+        <circle class="svg-true" cx="140" cy="80" r="1.4" fill="#ecd8b1"/>
+
+        <!-- Inner zones pinned exactly at true positions -->
+        <circle class="svg-zone-inner" cx="40" cy="20" r="8"/>
+        <circle class="svg-zone-inner" cx="140" cy="20" r="8"/>
+        <circle class="svg-zone-inner" cx="40" cy="80" r="8"/>
+        <circle class="svg-zone-inner" cx="140" cy="80" r="8"/>
+      </g>
+
+      <text class="svg-note" x="6" y="138">zones cannot translate  ⌖</text>
+    </g>
+  </g>
+
+  <text class="svg-takeaway" x="20" y="352">TAKEAWAY  ·  ONE SYMBOL = COMPOSITE.  TWO SYMBOLS = LOCKED EVERYWHERE.</text>
+</svg>
+
+      </div>
+      <div class="notes">
+        <div class="note">
+          <div class="note-label">What it controls</div>
+          
+          <p>Two FCFs look almost identical: a <strong>composite</strong> position callout and a <strong>multi-single-segment</strong> position callout. Both are two-line stacks. Both have a tighter inner zone than outer zone. They mean very different things.</p>
+<p><strong>Composite</strong> (one position symbol spanning both rows): the <strong>lower line</strong> controls feature-to-feature spacing within the pattern; it <strong>inherits only the primary datum's orientation</strong> — secondary and tertiary datums appear on the lower line for rotation lock only, NOT for translation. The pattern as a whole is free to drift in the plane perpendicular to the primary datum.</p>
+<p><strong>Multi-single-segment</strong> (a separate position symbol on each row): <strong>all datums apply on every line, for both rotation and translation</strong>. The pattern is locked to the datums on both lines — the lower line is just a tighter version of the upper.</p>
+        </div>
+        <div class="note">
+          <div class="note-label">Look at the diagram</div>
+          
+          <p>Two stacked FCFs side-by-side, looking nearly identical. <strong>Left (composite)</strong>: one ⌖ symbol spans both rows. The lower-line datum references rotate the pattern but don't pin it in space. <strong>Right (multi-single-segment)</strong>: each row has its own ⌖. Both rows fully constrain.</p>
+<p>Below each FCF, a tiny plan view of the four-hole pattern shows the freedom each scheme allows: composite lets the inner zone "float" rotationally locked but translationally free; multi-single-segment pins the inner zone exactly where the basic dimensions put it.</p>
+        </div>
+        <div class="note mistake">
+          <div class="note-label">Common mistake</div>
+          
+          <p>Drawing two ⌖ symbols (one per row) when you intended composite, or vice versa. The difference between the two callouts is <em>one symbol on the FCF</em> — but the inspection result on the same part can pass one and fail the other. ASME Y14.5-2018 is explicit: composite = one symbol shared between rows; multi-single-segment = one symbol per row. If you read a drawing and aren't sure which the designer meant, the symbol's geometry is the legal answer.</p>
+        </div>
+      </div>
+
+      <nav class="lesson-nav" aria-label="lesson navigation">
+        <a class="nav-prev" href="../l/35.html"><span class="arrow">←</span><span class="label"><span class="kicker">Previous · Lesson 35</span><span class="t">Projected tolerance zone: push the zone above the part</span></span></a>
+        <span class="nav-next empty"></span>
+      </nav>
+    </article>
+
+  </main>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
